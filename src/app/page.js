@@ -6,6 +6,7 @@ import Values from "./components/Values";
 import Banner from "./components/Banner";
 import Pricing from "./components/Pricing";
 import Coaches from "./components/Coaches";
+import Bunker from "./components/Bunker";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Banner />
       <Pricing />
       <Coaches />
+      <Bunker />
     </div>
   );
 }
