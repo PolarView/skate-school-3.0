@@ -15,7 +15,8 @@ module.exports = {
         primary: "#546EFF"
       },
       fontFamily: {
-        "sans-serif": ["Roboto-Regular"]
+        Roboto: ["Roboto"],
+        Unbounded: ["Unbounded"]
       }
     }
   },

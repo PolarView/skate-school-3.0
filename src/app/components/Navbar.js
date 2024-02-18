@@ -22,7 +22,7 @@ const Navbar = () => {
             />
           </svg>
         </div>
-        <div className="hidden min-w-[50%] items-center justify-between font-semibold text-[16px] min-[1150px]:text-[18px] text-[#191E28]  min-[1042px]:flex">
+        <div className="hidden min-w-[50%] items-center justify-between  font-semibold text-[16px] min-[1150px]:text-[18px] text-[#191E28]  min-[1042px]:flex">
           <div className="">О школе</div>
           <div>Скейт-парк</div>
           <div>Тренера</div>

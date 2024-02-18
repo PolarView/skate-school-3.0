@@ -19,9 +19,23 @@ body {
   line-height: 1;
   text-rendering: optimizeSpeed;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 @font-face {
-  font-family: myFirstFont;
+  font-family: Roboto;
   src: url(../static/typography/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Unbounded;
+  src: url(../static/typography/Unbounded-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Unbounded;
+  src: url(../static/typography/Unbounded-Regular.ttf);
+  font-weight: 400;
 }
