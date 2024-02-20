@@ -7,6 +7,8 @@ import Banner from "./components/Banner";
 import Pricing from "./components/Pricing";
 import Coaches from "./components/Coaches";
 import Bunker from "./components/Bunker";
+import Faq from "./components/Faq";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
       <Pricing />
       <Coaches />
       <Bunker />
+      <Faq />
+      <Footer />
     </div>
   );
 }

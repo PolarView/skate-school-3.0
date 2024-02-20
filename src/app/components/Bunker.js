@@ -3,13 +3,13 @@ import React from "react";
 
 const Bunker = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-y-10">
+    <div className="w-full flex flex-col items-center justify-center gap-y-10 max-md:pb-[50px]">
       <div className="w-full min-[1728px]:min-h-[990px] min-lg:min-h-[700px] max-md:min-h-[640px] min-h-[790px] relative">
         <Image
           src="/bunker/bunker.jpeg"
           fill
           alt="фото скейт-парка Bunker"
-          className="object-cover"
+          className="object-cover rounded-bl-[18px] rounded-br-[18px]"
         />
         <div className="flex absolute top-[50%] right-[50%] translate-x-[50%] -translate-y-[50%] items-center justify-center w-[550px] max-xl:w-[400px] max-md:w-[300px] h-[220px] max-xl:h-[180px] max-md:h-[104px] bg-[#191E28] rounded-[18px] -rotate-3">
           <div className="text-center  flex flex-col justify-center items-center text-white gap-1">
@@ -61,8 +61,8 @@ const Bunker = () => {
             </button>
           </div>
         </div>
-        <div className="w-full flex justify-between items-center  flex-col min-[700px]:flex-row">
-          <div className="w-[65%] h-[538px] relative">
+        <div className="w-full flex justify-between max-[950px]:gap-y-[42px] items-center min-[950px]:flex-row flex-col px-2">
+          <div className="w-[65%] max-[950px]:w-[98%] max-[440px]:w-[100%] max-[390px]:max-w-[345px] h-[538px] max-[560px]:h-[400px] max-[440px]:h-[240px] relative">
             <iframe
               style={{ borderRadius: "18px", position: "relative", zIndex: "99999" }}
               src="https://yandex.ru/map-widget/v1/?um=constructor%3A0a6085ea7a16ff1b81096e196aadeddc744e92b3a886eb5cfb1285a009f0ac82&amp;source=constructor"
@@ -72,7 +72,7 @@ const Bunker = () => {
 
             <div className="absolute w-full h-full top-3 right-3 rounded-[18px] bg-[#191E28] "></div>
           </div>
-          <div className="flex w-[35%] flex-col items-end justify-start ">
+          <div className="flex w-[35%] max-[950px]:w-[100%] flex-col  items-end max-[950px]:items-start justify-start ">
             <div className="flex  justify-start flex-col">
               <div className="flex flex-col items-start gap-y-3 pb-10">
                 <span className="text-[50px] font-['Unbounded'] font-semibold text-[#191E28]">

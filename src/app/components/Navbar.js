@@ -3,7 +3,7 @@ import { IoMdMenu } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <nav className="flex w-full 2xl:px-[20px] py-[15px] h-[108px] justify-center items-center">
+    <nav className="flex w-full fixed top-0 left-0 z-[9999999] bg-white 2xl:px-[20px] py-[15px] h-[108px] justify-center items-center">
       <div className="w-[90%] max-w-[1400px] h-[58px] flex items-center justify-between">
         <div className="hidden min-[1042px]:block">
           <svg

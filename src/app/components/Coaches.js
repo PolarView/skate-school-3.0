@@ -39,7 +39,7 @@ const Coaches = () => {
     setCarouselWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
   return (
-    <div className="w-full flex flex-col bg-[#191E28] items-center justify-center px-1 max-[700px]:px-2  max-md:min-h-[800px]  md:pt-[100px] py-[120px] max-md:py-5 max-md:pt-14 ">
+    <div className="w-full flex flex-col bg-[#191E28] items-center justify-center px-1 max-[700px]:px-2  max-md:min-h-[800px]  md:pt-[100px] py-[120px] max-md:py-5 max-md:pt-14 rounded-tl-[18px] rounded-tr-[18px]">
       <div className="  h-full w-[100%] max-w-[1230px] gap-y-[42px] flex flex-col items-center">
         <div className="text-[50px] max-[700px]:text-[40px] text-white font-['Unbounded'] leading-[60px]  self-start">
           Тренеры
