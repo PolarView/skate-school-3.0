@@ -5,7 +5,7 @@ const Values = () => {
     <>
       <div className="w-full flex flex-col items-center justify-center px-2  max-md:min-h-[800px]  md:pt-[100px] pt-[30px] ">
         <div className="min-[1380px]:w-[80%]  h-full w-[100%] max-w-[1200px] flex flex-col items-center">
-          <div className="text-[50px] font-['Unbounded'] leading-[60px] pb-[62px] self-start">
+          <div className="text-[50px] font-['Unbounded'] font-bold leading-[60px] pb-[62px] self-start">
             Ценности
           </div>
           <div className="max-w-[1200px] flex md:flex-row gap-x-3 flex-col justify-between items-center px-4 max-[1050px]:h-[450px] max-md:gap-6 max-md:min-h-[1100px]">

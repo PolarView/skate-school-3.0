@@ -24,9 +24,11 @@ const Pricing = () => {
     });
   };
   return (
-    <div className="w-full flex flex-col items-center justify-center px-1  max-md:min-h-[800px] pb-[30px] lg:pb-[100px] md:pt-[100px] pt-[30px] ">
+    <div
+      id="pricing"
+      className="w-full flex flex-col items-center justify-center px-1  max-md:min-h-[800px] pb-[30px] lg:pb-[100px] md:pt-[100px] pt-[30px] ">
       <div className="  h-full w-[100%] max-w-[1230px] flex flex-col items-center">
-        <div className="text-[50px] font-['Unbounded'] leading-[60px] pb-[62px] self-start">
+        <div className="text-[50px] font-['Unbounded'] font-bold leading-[60px] pb-[62px] self-start">
           Цены
         </div>
         <div className="max-w-[1230px] lg:h-[390px] max-lg:gap-y-10 flex lg:flex-row gap-x-7 max-[1260px]:gap-x-2  flex-col justify-between items-cetner px-4 max-[1050px]:px-0 ">

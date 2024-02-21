@@ -39,9 +39,11 @@ const Coaches = () => {
     setCarouselWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
   return (
-    <div className="w-full flex flex-col bg-[#191E28] items-center justify-center px-1 max-[700px]:px-2  max-md:min-h-[800px]  md:pt-[100px] py-[120px] max-md:py-5 max-md:pt-14 rounded-tl-[18px] rounded-tr-[18px]">
+    <div
+      id="coaches"
+      className="w-full flex flex-col bg-[#191E28] items-center justify-center px-1 max-[700px]:px-2  max-md:min-h-[800px]  md:pt-[100px] py-[120px] max-md:py-5 max-md:pt-14 rounded-tl-[18px] rounded-tr-[18px]">
       <div className="  h-full w-[100%] max-w-[1230px] gap-y-[42px] flex flex-col items-center">
-        <div className="text-[50px] max-[700px]:text-[40px] text-white font-['Unbounded'] leading-[60px]  self-start">
+        <div className="text-[50px] max-[700px]:text-[40px] text-white font-['Unbounded'] font-bold leading-[60px]  self-start">
           Тренеры
         </div>
         <div className="text-[30px] max-[700px]:text-[20px] text-[#EEF0F3] font-['Roboto'] font-normal leading-[36px]  self-start">
@@ -64,7 +66,7 @@ const Coaches = () => {
                 className="w-[33%] max-[830px]:w-[40%] max-[700px]:w-[48%] max-[600px]:w-[55%] max-[520px]:w-[65%] max-[440px]:w-[87%] p-5 max-[440px]:p-[10px] h-full flex flex-col  items-center justify-center gap-5 ">
                 <div className="w-full h-[580px] max-[1200px]:h-[560px] max-[1040px]:h-[440px] relative">
                   <video
-                    className="w-full min-w-[350px] max-[1200px]:min-w-[320px] max-[1040px]:min-w-[260px] max-[440px]:min-w-[270px] h-full object-fill rounded-[10px]"
+                    className="w-full min-w-[350px] object-cover max-[1200px]:min-w-[320px] max-[1040px]:min-w-[260px] max-[440px]:min-w-[270px] h-full  rounded-[10px]"
                     playsInline
                     poster={mentor.thumb}
                     ref={videoRefs[index]}

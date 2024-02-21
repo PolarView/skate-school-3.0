@@ -4,10 +4,12 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center bg-[#546EFF]   pb-[30px] lg:pb-[100px] md:pt-[100px] pt-[30px] ">
+    <div
+      id="footer"
+      className="w-full flex flex-col items-center justify-center bg-[#546EFF]   pb-[30px] lg:pb-[100px] md:pt-[100px] pt-[30px] ">
       <div className=" h-full w-[100%] max-w-[1230px] px-3 flex gap-y-[75px] flex-col items-center">
         <div className="w-full gap-y-[75px] flex justify-between items-start max-h-[130px">
-          <div className="text-[50px] max-md:text-[35px] max-w-[900px]  font-['Unbounded'] text-white font-semibold leading-[60px] pb-[62px] self-start">
+          <div className="text-[50px] max-md:text-[35px] max-w-[900px]  font-['Unbounded'] text-white font-semibold leading-[60px] min-md:pb-[62px] self-start">
             @schoolskate
             <br /> в соцсетях
           </div>
@@ -23,7 +25,7 @@ const Footer = () => {
         <div className="flex w-full justify-between max-md:flex-wrap max-h-[390px] max-md:max-h-[2000px] ">
           <div className="w-[33%] max-md:w-[49%] min:max-w-[390px] relative aspect-square">
             <Image
-              src="/footer/footer1.jpeg"
+              src="/footer/footer1.webp"
               alt="фото со скейт тренировки"
               fill
               className="object-cover rounded-[10px] aspect-square"
@@ -31,7 +33,7 @@ const Footer = () => {
           </div>
           <div className="w-[33%] max-md:w-[49%] max-w-[390px] aspect-square relative">
             <Image
-              src="/footer/footer2.jpeg"
+              src="/footer/footer2.webp"
               alt="фото со скейт тренировки"
               fill
               className="object-cover rounded-[10px] aspect-square"
@@ -39,7 +41,7 @@ const Footer = () => {
           </div>
           <div className="w-[33%] flex max-md:w-[100%] max-md:mt-2 md:max-w-[390px] max-md:self-center  relative aspect-square ">
             <Image
-              src="/footer/footer3.jpeg"
+              src="/footer/footer3.webp"
               alt="фото со скейт тренировки"
               fill
               className="object-cover rounded-[10px] aspect-square"

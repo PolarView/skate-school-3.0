@@ -68,7 +68,7 @@ export const mentorsData = [
     description:
       "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
     video: "/mentors/mentor2.mp4",
-    thumb: "mentors/mentor-thumb2.webp"
+    thumb: "mentors/mentor-thumb4.webp"
   },
   {
     id: 2,
@@ -78,7 +78,7 @@ export const mentorsData = [
     description:
       "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
     video: "/mentors/mentor3.mp4",
-    thumb: "mentors/mentor-thumb3.webp"
+    thumb: "mentors/mentor-thumb2.webp"
   },
   {
     id: 3,
@@ -88,17 +88,28 @@ export const mentorsData = [
     description:
       "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
     video: "/mentors/mentor4.mp4",
-    thumb: "mentors/mentor-thumb4.webp"
+    thumb: "mentors/mentor-thumb3.webp"
   },
+
   {
     id: 4,
-    name: "Александр",
+    name: "Ксюша",
     age: "29 лет",
-    experience: 7,
+    experience: 5,
     description:
       "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
     video: "/mentors/mentor3.mp4",
-    thumb: "mentors/mentor-thumb3.webp"
+    thumb: "mentors/mentor-thumb5.webp"
+  },
+  {
+    id: 5,
+    name: "???",
+    age: "29 лет",
+    experience: 5,
+    description:
+      "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
+    video: "/mentors/mentor3.mp4",
+    thumb: "mentors/mentor-thumb6.webp"
   }
 ];
 

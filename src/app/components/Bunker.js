@@ -1,12 +1,15 @@
 import Image from "next/image";
 import React from "react";
+import NextLink from "next/link";
 
 const Bunker = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-y-10 max-md:pb-[50px]">
+    <div
+      id="bunker"
+      className="w-full flex flex-col items-center justify-center gap-y-10 max-md:pb-[50px]">
       <div className="w-full min-[1728px]:min-h-[990px] min-lg:min-h-[700px] max-md:min-h-[640px] min-h-[790px] relative">
         <Image
-          src="/bunker/bunker.jpeg"
+          src="/bunker/bunker.webp"
           fill
           alt="фото скейт-парка Bunker"
           className="object-cover rounded-bl-[18px] rounded-br-[18px]"
@@ -33,7 +36,7 @@ const Bunker = () => {
         <div className="flex w-full gap-x-5 justify-between h-[590px] max-[800px]:h-[345px] max-[700px]:min-h-[700px]  flex-row max-[700px]:flex-col max-xl:h-[450px] max-2xl:h-[500px] items-center">
           <div className="w-[50%] max-w-[590px] h-full max-[700px]:h-[345px] max-[700px]:w-[345px] relative">
             <Image
-              src="/bunker/view1.jpg"
+              src="/bunker/view1.webp"
               alt="фото скейт парка Bunker"
               fill
               className="rounded-[10px] aspect-square h-full "
@@ -41,7 +44,7 @@ const Bunker = () => {
           </div>
           <div className="w-[50%] max-w-[590px] h-full max-[700px]:h-[345px] max-[700px]:w-[345px] relative">
             <Image
-              src="/bunker/view2.jpg"
+              src="/bunker/view2.webp"
               alt="фото скейт парка Bunker"
               fill
               className="rounded-[10px] aspect-square h-full "
@@ -56,15 +59,23 @@ const Bunker = () => {
             <div className="font-['Roboto'] font-normal text-[30px] max-[1120px]:text-[24px] text-[#324164] leading-[36px]">
               Вы можете оценить загрузу в скейт-парке, посмотрев прямой эфир с камер
             </div>
-            <button className="max-w-[450px] max-[600px]:w-[345px] h-[56px] min-w-[140px] font-normal font-['Unbounded'] flex justify-center items-center bg-[#546EFF] text-5 text-white rounded-[40px] px-[83px] max-[600px]:px-[30px]  py-[17px]">
-              <span>Смотреть трансляцию</span>
-            </button>
+            <NextLink href="translation">
+              <button className="max-w-[450px] relative max-[600px]:w-[345px] h-[56px] min-w-[140px] font-normal font-['Unbounded'] flex justify-center items-center bg-[#546EFF] text-5 text-white rounded-[40px] px-[83px] max-[600px]:px-[30px]  py-[17px]">
+                <span>Смотреть трансляцию</span>
+                <div className="absolute top-0 right-0">
+                  <span class="relative flex items-center justify-center size-6">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-4 w-4 bg-red-500"></span>
+                  </span>
+                </div>
+              </button>
+            </NextLink>
           </div>
         </div>
         <div className="w-full flex justify-between max-[950px]:gap-y-[42px] items-center min-[950px]:flex-row flex-col px-2">
           <div className="w-[65%] max-[950px]:w-[98%] max-[440px]:w-[100%] max-[390px]:max-w-[345px] h-[538px] max-[560px]:h-[400px] max-[440px]:h-[240px] relative">
             <iframe
-              style={{ borderRadius: "18px", position: "relative", zIndex: "99999" }}
+              style={{ borderRadius: "18px", position: "relative", zIndex: "999" }}
               src="https://yandex.ru/map-widget/v1/?um=constructor%3A0a6085ea7a16ff1b81096e196aadeddc744e92b3a886eb5cfb1285a009f0ac82&amp;source=constructor"
               width="100%"
               height="100%"

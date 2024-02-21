@@ -18,7 +18,9 @@ const Faq = () => {
     });
   };
   return (
-    <div className="w-full flex flex-col items-center justify-center   max-md:min-h-[800px]   md:pt-[100px] pt-[30px] ">
+    <div
+      id="faq"
+      className="w-full flex flex-col items-center justify-center   max-md:min-h-[800px]   md:pt-[100px] pt-[30px] ">
       <div className=" h-full w-[100%] max-w-[1230px] flex flex-col items-center">
         <div className="text-[50px] max-md:text-[40px] font-['Unbounded'] font-semibold  leading-[60px] pb-[62px] self-start">
           Часто задаваемые вопросы

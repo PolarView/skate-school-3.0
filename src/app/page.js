@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className=" min-h-screen flex items-center  flex-col w-[100vw]">
+    <div className=" min-h-screen flex items-center flex-col w-[100vw]">
       <Navbar />
       <Preview />
       <About />

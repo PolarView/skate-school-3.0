@@ -5,11 +5,12 @@ const Preview = () => {
   return (
     <div className="w-full  pt-[210px] pb-[50px] rounded-bl-[18px] rounded-br-[18px] bg-[#191E28]">
       <div className=" flex w-full justify-center flex-col  items-center px-4">
-        <div className="flex w-[100%] max-w-[1200px] justify-between items-center gap-x-20 max-[1160px]:gap-x-4 min-[800px]:flex-row flex-col">
+        <div className="flex w-[100%] max-w-[1200px] justify-between items-center max-md:gap-y-10 gap-x-20 max-[1160px]:gap-x-4 min-[800px]:flex-row flex-col">
           <div className="min-[800px]:w-[50%] w-[100%] max-w-[720px] flex items-center justify-center">
             <div className="relative min-[800px]:max-w-[600px] w-[100%] h-[100%] min-[800px]:max-h-[550px] aspect-square">
               <Image
-                src="/preview/preview.jpeg"
+                priority
+                src="/preview/preview.webp"
                 alt="фото скейт школы"
                 fill
                 className="aspect-square object-cover rounded-[10px] "
@@ -17,8 +18,8 @@ const Preview = () => {
             </div>
           </div>
 
-          <div className="flex md:min-h-[500px] flex-col min-[1160px]:text-[50px]  max-[1160px]:text-[40px] max-[900px]:text-[30px] max-[800px]:text-[40px] max-[600px]:text-[36px] min-[800px]:w-[50%] w-full max-w-[800px] gap-2 items-center font-['Unbounded'] justify-center">
-            <div className="min-[800px]:max-w-[509px]   flex flex-col font-bold   gap-[32px] max-[900px]:gap-[16px] self-start leading-[55px] max-md:leading-[35px]">
+          <div className="flex md:min-h-[500px] flex-col min-[1160px]:text-[50px]  max-[1160px]:text-[40px] max-[900px]:text-[30px] max-[800px]:text-[40px] max-[600px]:text-[35px] min-[800px]:w-[50%] w-full max-w-[800px] gap-2 items-center font-['Unbounded'] justify-center">
+            <div className="min-[800px]:max-w-[509px]   flex flex-col font-bold   gap-[32px] max-md:gap-10 max-[900px]:gap-[16px] self-start leading-[55px] max-[900px]:leading-[35px]">
               <div className="text-white min-w-[320px] w-full">
                 Первая
                 <div className="text-[#546EFF] w-full">школа скейтбординга </div>
