@@ -59,14 +59,14 @@ const Coaches = () => {
           <motion.div
             drag="x"
             dragConstraints={{ right: 0, left: -carouselWidth }}
-            className="w-full h-full flex">
+            className="w-full h-full max-[450px]:space-x-5 flex">
             {mentorsData.map((mentor, index) => (
               <div
                 key={mentor.id}
                 className="w-[33%] max-[830px]:w-[40%] max-[700px]:w-[48%] max-[600px]:w-[55%] max-[520px]:w-[65%] max-[440px]:w-[87%] p-5 max-[440px]:p-[10px] h-full flex flex-col  items-center justify-center gap-5 ">
-                <div className="w-full h-[580px] max-[1200px]:h-[560px] max-[1040px]:h-[440px] relative">
+                <div className="w-full h-[580px] max-[1200px]:h-[560px] max-[1040px]:h-[440px] max-[450px]:h-[400px] relative">
                   <video
-                    className="w-full min-w-[350px] object-cover max-[1200px]:min-w-[320px] max-[1040px]:min-w-[260px] max-[440px]:min-w-[270px] h-full  rounded-[10px]"
+                    className="w-full min-w-[350px] object-cover max-[1200px]:min-w-[320px] max-[1040px]:min-w-[260px] max-[440px]:min-w-[240px] h-full  rounded-[10px]"
                     playsInline
                     poster={mentor.thumb}
                     ref={videoRefs[index]}

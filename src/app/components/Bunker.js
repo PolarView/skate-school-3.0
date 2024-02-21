@@ -24,11 +24,11 @@ const Bunker = () => {
         </div>
       </div>
       <div className="max-w-[1230px] flex flex-col items-center justify-center gap-y-12 px-2">
-        <div className="w-full flex max-[700px]:flex-col max-[700px]:gap-y-6 items-center justify-between gap-x-5 min-[700px]:max-h-[220px]">
-          <div className="font-['Unbounded'] w-[50%] max-[700px]:w-[100%] font-normal text-[50px]  max-[1120px]:text-[32px] max-w-[590px] leading-[55px] text-[#191E28]">
+        <div className="w-full flex max-[700px]:flex-col max-[700px]:gap-y-6 items-center justify-between gap-x-5 px-4 min-[700px]:max-h-[220px]">
+          <div className="font-['Unbounded'] w-[50%] max-[700px]:w-[100%] font-normal text-[50px]  max-[1120px]:text-[32px]  max-w-[590px] leading-[55px] max-md:leading-[35px] text-[#191E28]">
             Schoolskate — больше, чем школа скейтбординга
           </div>
-          <div className="font-['Roboto']  w-[50%] max-[700px]:w-[100%]   font-normal text-[30px] max-[1120px]:text-[24px] leading-[36px] max-w-[590px] text-[#324164]">
+          <div className="font-['Roboto']  w-[50%] max-[700px]:w-[100%]   font-normal text-[30px] max-[1120px]:text-[24px] max-md:text-[20px] leading-[36px] max-md:leading-6 max-w-[590px] text-[#324164]">
             Специально для наших учеников мы спроектировали и создали собственный скейт-парк, в
             котором их тренировки будут приностить максимум результата и удовольствия
           </div>
@@ -42,7 +42,7 @@ const Bunker = () => {
               className="rounded-[10px] aspect-square h-full "
             />
           </div>
-          <div className="w-[50%] max-w-[590px] h-full max-[700px]:h-[345px] max-[700px]:w-[345px] relative">
+          <div className="w-[50%] max-w-[590px] h-full max-[700px]:h-[345px] max-[700px]:w-[345px] aspect-square relative">
             <Image
               src="/bunker/view2.webp"
               alt="фото скейт парка Bunker"

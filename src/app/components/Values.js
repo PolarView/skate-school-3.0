@@ -5,10 +5,10 @@ const Values = () => {
     <>
       <div className="w-full flex flex-col items-center justify-center px-2  max-md:min-h-[800px]  md:pt-[100px] pt-[30px] ">
         <div className="min-[1380px]:w-[80%]  h-full w-[100%] max-w-[1200px] flex flex-col items-center">
-          <div className="text-[50px] font-['Unbounded'] font-bold leading-[60px] pb-[62px] self-start">
+          <div className="text-[50px] max-md:text-[40px] font-['Unbounded'] font-bold leading-[60px] pb-[62px] self-start">
             Ценности
           </div>
-          <div className="max-w-[1200px] flex md:flex-row gap-x-3 flex-col justify-between items-center px-4 max-[1050px]:h-[450px] max-md:gap-6 max-md:min-h-[1100px]">
+          <div className="max-w-[1200px] flex md:flex-row gap-x-3 flex-col justify-between items-center max-[450px]:px-0 px-4 max-[1050px]:h-[450px] max-md:gap-6 max-md:min-h-[1100px]">
             <div className="flex gap-y-9 max-md:gap-y-4  max-w-[31%] max-md:max-w-[90%]  h-full max-[1080px]:max-w-[32%] flex-col">
               <div>
                 <svg
@@ -32,7 +32,7 @@ const Values = () => {
                   <path d="M67.2256 78.8574L72.7861 114.242" stroke="#EEF0F3" stroke-width="6" />
                 </svg>
               </div>
-              <div className="text-[30px] max-md:min-h-0 max-[1080px]:text-[25px] max-md:text-[30px]  font-['Unbounded'] min-h-[72px] font-normal leading-9 text-[#191E28]">
+              <div className="text-[30px] max-md:min-h-0 max-[1080px]:text-[25px] max-md:text-[26px]  font-['Unbounded'] min-h-[72px] font-normal leading-9 text-[#191E28]">
                 Безопасность
               </div>
               <div className="text-[#324164] max-[1080px]:text-[18px] min-h-[153px] max-md:min-h-0  text-[20px] font-['Roboto'] leading-6 font-normal">
@@ -77,7 +77,7 @@ const Values = () => {
                   />
                 </svg>
               </div>
-              <div className="text-[30px] max-md:min-h-0 max-md:text-[30px] max-[1080px]:text-[25px] min-h-[72px] font-['Unbounded'] font-normal leading-9 text-[#191E28]">
+              <div className="text-[30px] max-md:min-h-0 max-md:text-[26px] max-[1080px]:text-[25px] min-h-[72px] font-['Unbounded'] font-normal leading-9 text-[#191E28]">
                 Эмоции
               </div>
               <div className="text-[#324164] max-[1080px]:text-[18px] max-md:text-[17px] min-h-[153px] max-md:min-h-0 text-[20px] font-['Roboto'] leading-6 font-normal">
@@ -116,7 +116,7 @@ const Values = () => {
                   />
                 </svg>
               </div>
-              <div className="text-[30px] max-md:min-h-0 max-md:text-[30px] max-[1080px]:text-[25px] min-h-[72px] font-['Unbounded'] font-normal leading-9 text-[#191E28]">
+              <div className="text-[30px] max-md:min-h-0 max-md:text-[26px] max-[1080px]:text-[25px] min-h-[72px] font-['Unbounded'] font-normal leading-9 text-[#191E28]">
                 Индивидуальный подход
               </div>
               <div className="text-[#324164] max-[1080px]:text-[18px] min-h-[153px] max-md:min-h-0 text-[20px] font-['Roboto'] leading-6 font-normal">

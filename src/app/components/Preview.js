@@ -18,14 +18,14 @@ const Preview = () => {
             </div>
           </div>
 
-          <div className="flex md:min-h-[500px] flex-col min-[1160px]:text-[50px]  max-[1160px]:text-[40px] max-[900px]:text-[30px] max-[800px]:text-[40px] max-[600px]:text-[35px] min-[800px]:w-[50%] w-full max-w-[800px] gap-2 items-center font-['Unbounded'] justify-center">
-            <div className="min-[800px]:max-w-[509px]   flex flex-col font-bold   gap-[32px] max-md:gap-10 max-[900px]:gap-[16px] self-start leading-[55px] max-[900px]:leading-[35px]">
+          <div className="flex md:min-h-[500px] flex-col min-[1160px]:text-[50px]  max-[1160px]:text-[40px] max-[900px]:text-[30px] max-[800px]:text-[40px] max-[600px]:text-[35px] max-[450px]:text-[30px] min-[800px]:w-[50%] w-full max-w-[800px] gap-2 items-center font-['Unbounded'] justify-center">
+            <div className="min-[800px]:max-w-[509px] flex flex-col font-bold gap-y-[32px] max-md:gap-10 max-[900px]:gap-[16px] self-start leading-[55px] max-[900px]:leading-[35px]">
               <div className="text-white min-w-[320px] w-full">
                 Первая
-                <div className="text-[#546EFF] w-full">школа скейтбординга </div>
+                <div className="text-[#546EFF] w-full">школа скейтбординга</div>
                 для детей и взрослых в Москве
               </div>
-              <button className="max-w-[320px] min-[550px]:max-w-[500px] min-[800px]:max-w-[320px] h-[56px] min-w-[147px] flex justify-center items-center bg-[#546EFF] text-[21px] text-white rounded-[40px] px-[83px] py-[17px]">
+              <button className="max-w-[320px] min-[550px]:max-w-[500px] min-[800px]:max-w-[320px] max-[450px]:max-w-[280px] h-[56px] min-w-[147px] flex justify-center items-center bg-[#546EFF] text-[21px] text-white rounded-[40px]  px-[83px] py-[17px]">
                 <span>Записаться</span>
               </button>
             </div>

@@ -83,7 +83,7 @@ const Pricing = () => {
                   </div>
                 </div>
               </div>
-              <button className="max-w-[320px] h-[56px] min-w-[140px] font-normal font-['Unbounded'] flex justify-center items-center bg-[#546EFF] text-[21px] text-white rounded-[40px] px-[83px]  py-[17px]">
+              <button className="max-w-[320px] max-[450px]:max-w-[280px] h-[56px] min-w-[140px] font-normal font-['Unbounded'] flex justify-center items-center bg-[#546EFF] text-[21px] text-white rounded-[40px] px-[83px]  py-[17px]">
                 <span>Записаться</span>
               </button>
             </div>
