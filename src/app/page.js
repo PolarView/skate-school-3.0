@@ -12,8 +12,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className=" min-h-screen flex items-center flex-col w-[100vw]">
-      {/* make smaller navbar height */}
+    <div className=" min-h-screen flex max-w-screen overflow-x-hidden flex-col w-screen">
       <Navbar />
       <Preview />
       <About />

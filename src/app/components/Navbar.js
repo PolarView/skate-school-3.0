@@ -7,7 +7,7 @@ import NextLink from "next/link";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <nav className="flex w-full fixed top-0  left-0 z-[9999] bg-white 2xl:px-[20px] py-[15px] md:h-[108px] h-[73px] justify-center items-center">
+    <nav className="flex w-full fixed top-0  left-0 z-[9999] bg-white 2xl:px-[20px] py-[15px] md:h-[108px] h-[63px] justify-center items-center">
       <div className="w-[90%] max-w-[1400px] h-[58px] flex items-center justify-between">
         <div className="hidden min-[1042px]:block">
           <svg
@@ -72,7 +72,7 @@ const Navbar = () => {
           <IoMdMenu className="block text-3xl min-[1042px]:hidden" />
         </button>
         {isMenuOpen && (
-          <div className="w-[100%]  max-w-[260px] z-[999999] flex-col  fixed top-0 right-0 h-screen bg-[#EBEFF5] px-[15px] py-5">
+          <div className="w-[100%]  max-w-[260px] z-[999999] flex-col  fixed top-0 right-0  h-screen bg-[#EBEFF5] px-[15px] py-5">
             <div className="absolute h-screen w-full min-w-[2300px] overflow-hidden top-0 right-[260px] z-[99999999] opacity-60 bg-slate-600"></div>
             <div className="w-full flex items-center justify-between">
               <div className="size-[45px]">
