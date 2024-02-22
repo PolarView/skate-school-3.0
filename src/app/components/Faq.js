@@ -29,7 +29,7 @@ const Faq = () => {
           {faq.map((item) => {
             return (
               <div
-                className="w-full py-[32px]  border-b  border-[#3241644D]"
+                className="w-full py-[32px] cursor-pointer border-b  border-[#3241644D]"
                 key={item.id}
                 onClick={() => toggleFaq(item.id)}>
                 <div className="flex w-full justify-between gap-x-5 items-center">

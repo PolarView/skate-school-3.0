@@ -14,12 +14,14 @@ const Bunker = () => {
           alt="фото скейт-парка Bunker"
           className="object-cover rounded-bl-[18px] rounded-br-[18px]"
         />
-        <div className="flex absolute top-[50%] right-[50%] translate-x-[50%] -translate-y-[50%] items-center justify-center w-[550px] max-xl:w-[400px] max-md:w-[300px] h-[220px] max-xl:h-[180px] max-md:h-[104px] bg-[#191E28] rounded-[18px] -rotate-3">
-          <div className="text-center  flex flex-col justify-center items-center text-white gap-1">
-            <span className="font-['Unbounded'] font-semibold text-[93px] max-xl:text-[60px]">
+        <div className="flex absolute top-[50%] right-[50%] select-none translate-x-[50%] -translate-y-[50%] items-center justify-center w-[550px] max-xl:w-[400px] max-md:w-[300px] h-[220px] max-xl:h-[180px] max-md:h-[104px] bg-[#191E28] rounded-[18px] rotate-3">
+          <div className="text-center -rotate-3 flex  flex-col justify-center items-center text-white ">
+            <div className="font-['Unbounded'] rotate-0 font-semibold text-center text-[93px] max-xl:text-[60px] max-md:text-[50px]">
               Bunker
-            </span>
-            <span className="font-['Unbounded'] font-normal text-[24px]">cкейт-парк</span>
+            </div>
+            <div className="font-['Unbounded'] text-center font-normal text-[24px] max-md:text-[15px]">
+              cкейт-парк
+            </div>
           </div>
         </div>
       </div>
@@ -94,7 +96,7 @@ const Bunker = () => {
                 </span>
               </div>
               <div className="flex flex-col items-start gap-y-3">
-                <div className="flex items-center justify-center gap-y-2">
+                <div className="flex items-center justify-center gap-x-2">
                   <span className="text-[50px] font-['Unbounded'] font-semibold text-[#191E28]">
                     <svg
                       width="31"
@@ -112,7 +114,7 @@ const Bunker = () => {
                     Динамо
                   </span>
                 </div>
-                <div className="flex items-center justify-center gap-y-2">
+                <div className="flex items-center justify-center gap-x-2">
                   <span className="text-[50px] font-['Unbounded'] font-semibold text-[#191E28]">
                     <svg
                       width="31"

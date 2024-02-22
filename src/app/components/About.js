@@ -22,7 +22,9 @@ const About = () => {
           <div className="w-[47%] max-md:w-[90%] max-h-[408px]">
             <div className="flex flex-col w-full items-center gap-[42px] ">
               <div className="w-full max-[390px]:h-[178px] h-[139px] md:h-[169px] flex items-center justify-center leading-[30px] md:leading-[36px] text-center rounded-[10px] text-white bg-[#546EFF] rotate-3 font-['Unbounded'] md:text-[30px] text-[25px] font-normal">
-                Schoolskate — школа, где каждый сможет открыть для себя много нового
+                <div className="text-center -rotate-3">
+                  Schoolskate — школа, где каждый сможет открыть для себя много нового
+                </div>
               </div>
               <div className="w-full h-full min-[900px]:text-[30px] text-[20px] md:text-[28px] text-[#324164] md:leading-[36px] leading-6 font-['Roboto']">
                 Уже больше 13 лет мы помогаем новичкам и уже катающимся преодолеть все страхи,

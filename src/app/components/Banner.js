@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="w-full h-[175px] overflow-hidden flex items-center justify-center bg-[#191E28]">
+    <div className="w-full h-[175px] select-none overflow-hidden flex items-center justify-center bg-[#191E28]">
       <div className="max-w-[1200px] max-[1000px]:w-[100%] flex items-center max-[1000px]:justify-center justify-between gap-x-5 max-[450px]:gap-x-3">
         <div className="relative w-[339px] max-[1000px]:w-[186px]   max-[1000px]:h-[186px]">
           <div className="absolute top-[50%] right-[50%]  translate-x-[50%] -translate-y-[50%] font-['Unbounded'] -rotate-12 font-bold text-[72px] max-[1000px]:text-[34px] text-white text-center h-full flex items-center justify-center">

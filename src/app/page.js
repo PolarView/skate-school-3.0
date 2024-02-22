@@ -26,3 +26,6 @@ export default function Home() {
     </div>
   );
 }
+
+// off top scroll
+// bunker main image text fix on iphone

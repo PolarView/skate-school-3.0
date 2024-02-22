@@ -13,8 +13,8 @@ const Footer = () => {
             @schoolskate
             <br /> в соцсетях
           </div>
-          <div className=" h-full flex items-center max-md:hidden  flex-col justify-center ">
-            <div className=" h-full ">
+          <div className=" h-full flex items-center max-md:hidden group flex-col justify-center ">
+            <div className=" h-full group-hover:translate-x-3 group-hover:-translate-y-3 transition-all duration-300">
               <FaTelegramPlane fontSize={80} color="white" />
             </div>
             <button className="w-[267px] text-[21px] flex justify-center items-center -mt-[35px] rotate-[10deg] px-10 py-3 h-[70px] font-['Unbounded'] bg-[#191E28] rounded-[40px] font-semibold text-white ">
@@ -39,7 +39,7 @@ const Footer = () => {
               className="object-cover rounded-[10px] aspect-square"
             />
           </div>
-          <div className="w-[33%] flex max-md:w-[100%] max-md:mt-2 md:max-w-[390px] max-md:self-center  relative aspect-square ">
+          <div className="w-[33%] flex max-md:w-[100%]  max-md:mt-2 md:max-w-[390px] max-md:self-center  relative aspect-square ">
             <Image
               src="/footer/footer3.webp"
               alt="фото со скейт тренировки"
@@ -48,11 +48,11 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className=" h-full max-md:flex w-full items-center hidden  flex-col justify-center ">
-          <div className=" h-full w-ful">
+        <div className=" h-full max-md:flex w-full group items-center hidden flex-col justify-center ">
+          <div className=" h-full w-ful group-hover:translate-x-3 group-hover:-translate-y-3 transition-all duration-300">
             <FaTelegramPlane fontSize={80} color="white" />
           </div>
-          <button className="w-[267px] text-[21px] flex justify-center items-center -mt-[35px] rotate-[10deg] px-10 py-3 h-[70px] font-['Unbounded'] bg-[#191E28] rounded-[40px] font-semibold text-white ">
+          <button className="w-[267px]  text-[21px] flex justify-center items-center -mt-[35px] rotate-[10deg] px-10 py-3 h-[70px] font-['Unbounded'] bg-[#191E28] rounded-[40px] font-semibold text-white ">
             <span>Подписывайся</span>
           </button>
         </div>

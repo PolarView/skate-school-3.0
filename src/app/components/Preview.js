@@ -32,8 +32,8 @@ const Preview = () => {
           </div>
         </div>
       </div>
-      <div className="hidden w-full -mt-24 justify-end min-[1350px]:flex">
-        <div>
+      <div className="hidden w-full -mt-24 justify-end group min-[1350px]:flex">
+        <div className=" group-hover:-translate-y-4 transition-all duration-700">
           <svg
             width="344"
             height="195"

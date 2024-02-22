@@ -47,14 +47,20 @@ const Pricing = () => {
               <div className="flex flex-col w-full justify-between items-center gap-[30px]">
                 <div className="flex w-full justify-between items-center px-4 py-2">
                   <div onClick={() => changeTrainingDuration(item.id)}>
-                    <MdArrowBackIos color="#546EFF" />
+                    <MdArrowBackIos
+                      className="cursor-pointer hover:to-blue-800 text-[18px]"
+                      color="#546EFF"
+                    />
                   </div>
                   <div className="text-[21px] text-[#191E28] font-normal font-['Unbounded']">
                     {`Занятие 
                     ${item.currentDuration === "hour" ? "1 час" : "1,5 часа"}`}
                   </div>
                   <div onClick={() => changeTrainingDuration(item.id)}>
-                    <MdArrowForwardIos color="#546EFF" />
+                    <MdArrowForwardIos
+                      className="cursor-pointer hover:to-blue-800 text-[18px]"
+                      color="#546EFF"
+                    />
                   </div>
                 </div>
                 <div className="w-[80%] flex justify-between items-center">
