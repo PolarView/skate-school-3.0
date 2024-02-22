@@ -23,9 +23,9 @@ const Bunker = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1230px] flex flex-col items-center justify-center gap-y-12 px-2">
-        <div className="w-full flex max-[700px]:flex-col max-[700px]:gap-y-6 items-center justify-between gap-x-5 px-4 min-[700px]:max-h-[220px]">
-          <div className="font-['Unbounded'] w-[50%] max-[700px]:w-[100%] font-normal text-[50px]  max-[1120px]:text-[32px]  max-w-[590px] leading-[55px] max-md:leading-[35px] text-[#191E28]">
+      <div className="max-w-[1200px] flex flex-col items-center justify-center gap-y-12 px-2">
+        <div className="w-full flex max-[700px]:flex-col max-[700px]:gap-y-6 items-center justify-between gap-x-5  min-[700px]:max-h-[220px]">
+          <div className="font-['Unbounded'] w-[50%] max-[700px]:w-[100%] font-normal text-[50px] max-[1120px]:text-[32px] max-w-[590px] leading-[55px] max-md:leading-[35px] text-[#191E28]">
             Schoolskate — больше, чем школа скейтбординга
           </div>
           <div className="font-['Roboto']  w-[50%] max-[700px]:w-[100%]   font-normal text-[30px] max-[1120px]:text-[24px] max-md:text-[20px] leading-[36px] max-md:leading-6 max-w-[590px] text-[#324164]">
@@ -33,8 +33,8 @@ const Bunker = () => {
             котором их тренировки будут приностить максимум результата и удовольствия
           </div>
         </div>
-        <div className="flex w-full gap-x-5 justify-between h-[590px] max-[800px]:h-[345px] max-[700px]:min-h-[700px]  flex-row max-[700px]:flex-col max-xl:h-[450px] max-2xl:h-[500px] items-center">
-          <div className="w-[50%] max-w-[590px] h-full max-[700px]:h-[345px] max-[700px]:w-[345px] relative">
+        <div className="flex w-full gap-x-5 justify-between  max-[700px]:min-h-[700px] max-[450px]:min-h-[600px]  max-[450px]:gap-y-2  flex-row max-[700px]:flex-col  items-center">
+          <div className="w-[49%] max-w-[590px] max-h-[590px]  max-[700px]:h-[345px] max-[450px]:h-[300px] max-[700px]:w-[345px] max-[450px]:w-[300px] aspect-square relative">
             <Image
               src="/bunker/view1.webp"
               alt="фото скейт парка Bunker"
@@ -42,7 +42,7 @@ const Bunker = () => {
               className="rounded-[10px] aspect-square h-full "
             />
           </div>
-          <div className="w-[50%] max-w-[590px] h-full max-[700px]:h-[345px] max-[700px]:w-[345px] aspect-square relative">
+          <div className="w-[49%] max-w-[590px] max-h-[590px]  max-[700px]:h-[345px] max-[450px]:h-[300px] max-[450px]:w-[300px] max-[700px]:w-[345px] aspect-square relative">
             <Image
               src="/bunker/view2.webp"
               alt="фото скейт парка Bunker"
@@ -60,7 +60,7 @@ const Bunker = () => {
               Вы можете оценить загрузу в скейт-парке, посмотрев прямой эфир с камер
             </div>
             <NextLink href="translation">
-              <button className="max-w-[450px] relative max-[600px]:w-[345px] h-[56px] min-w-[140px] font-normal font-['Unbounded'] flex justify-center items-center bg-[#546EFF] text-5 text-white rounded-[40px] px-[83px] max-[600px]:px-[30px]  py-[17px]">
+              <button className="max-w-[450px] relative max-[600px]:w-[345px] max-[500px]:w-[300px] h-[56px] min-w-[140px] font-normal font-['Unbounded'] flex justify-center items-center bg-[#546EFF] text-5 text-white rounded-[40px] px-[83px] max-[600px]:px-[30px]  py-[17px]">
                 <span>Смотреть трансляцию</span>
                 <div className="absolute top-0 right-0">
                   <span class="relative flex items-center justify-center size-6">

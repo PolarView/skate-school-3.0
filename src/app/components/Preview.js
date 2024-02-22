@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const Preview = () => {
   return (
-    <div className="w-full  pt-[210px] pb-[50px] rounded-bl-[18px] rounded-br-[18px] bg-[#191E28]">
+    <div className="w-full  pt-[210px] max-md:pt-[120px] pb-[50px] rounded-bl-[18px] rounded-br-[18px] bg-[#191E28]">
       <div className=" flex w-full justify-center flex-col  items-center px-4">
         <div className="flex w-[100%] max-w-[1200px] justify-between items-center max-md:gap-y-10 gap-x-20 max-[1160px]:gap-x-4 min-[800px]:flex-row flex-col">
-          <div className="min-[800px]:w-[50%] w-[100%] max-w-[720px] flex items-center justify-center">
-            <div className="relative min-[800px]:max-w-[600px] w-[100%] h-[100%] min-[800px]:max-h-[550px] aspect-square">
+          <div className="min-[800px]:w-[50%] w-[100%] max-w-[720px] flex items-center justify-start max-md:justify-center max-[450px]:px-2">
+            <div className="relative min-[800px]:max-w-[600px] w-[100%] h-[100%] min-[800px]:max-h-[550px] max-[800px]:max-w-[500px] aspect-square">
               <Image
                 priority
                 src="/preview/preview.webp"
@@ -18,9 +18,9 @@ const Preview = () => {
             </div>
           </div>
 
-          <div className="flex md:min-h-[500px] flex-col min-[1160px]:text-[50px]  max-[1160px]:text-[40px] max-[900px]:text-[30px] max-[800px]:text-[40px] max-[600px]:text-[35px] max-[450px]:text-[30px] min-[800px]:w-[50%] w-full max-w-[800px] gap-2 items-center font-['Unbounded'] justify-center">
-            <div className="min-[800px]:max-w-[509px] flex flex-col font-bold gap-y-[32px] max-md:gap-10 max-[900px]:gap-[16px] self-start leading-[55px] max-[900px]:leading-[35px]">
-              <div className="text-white min-w-[320px] w-full">
+          <div className="flex   flex-col min-[1160px]:text-[50px]  max-[1160px]:text-[40px] max-[900px]:text-[30px] max-[800px]:text-[40px] max-[600px]:text-[35px] max-[450px]:text-[30px] min-[800px]:w-[50%] w-full max-w-[800px] gap-2 items-center font-['Unbounded'] justify-start ">
+            <div className="min-[800px]:max-w-[509px] flex flex-col font-bold gap-y-[32px] max-md:gap-10 max-[900px]:gap-[16px] self-start  leading-[55px] max-[900px]:leading-[35px]">
+              <div className="text-white min-w-[320px] max-[450px]:min-w-[280px] w-full">
                 Первая
                 <div className="text-[#546EFF] w-full">школа скейтбординга</div>
                 для детей и взрослых в Москве

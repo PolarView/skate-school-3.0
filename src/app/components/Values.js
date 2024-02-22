@@ -1516,7 +1516,7 @@ const Values = () => {
             />
           </svg>
         </div>
-        <div className="block min-[600px]:hidden h-full min-h-[427px] w-full">
+        <div className="block min-[600px]:hidden h-full min-[450px]:min-h-[427px] max-[390px]:h-[380px] w-full">
           <svg
             width="100%"
             height="427"

@@ -15,15 +15,15 @@ export default function Home() {
     <div className=" min-h-screen flex items-center flex-col w-[100vw]">
       {/* make smaller navbar height */}
       <Navbar />
-      {/* <Preview /> */}
+      <Preview />
       <About />
       <Values />
-      {/* <Banner /> */}
+      <Banner />
       <Pricing />
       <Coaches />
-      {/* <Bunker /> */}
-      {/* <Faq /> */}
-      {/* <Footer /> */}
+      <Bunker />
+      <Faq />
+      <Footer />
     </div>
   );
 }
