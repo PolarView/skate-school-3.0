@@ -4,7 +4,7 @@ import { mentorsData } from "../data";
 import { motion } from "framer-motion";
 import { BsPauseFill, BsFillPlayFill } from "react-icons/bs";
 import { GoMute, GoUnmute } from "react-icons/go";
-import Marquee from "react-fast-marquee";
+import { PiHandSwipeLeft } from "react-icons/pi";
 
 const Coaches = () => {
   const [carouselWidth, setCarouselWidth] = useState(null);
@@ -46,10 +46,24 @@ const Coaches = () => {
         <div className="text-[50px] max-[700px]:text-[40px] text-white font-['Unbounded'] font-bold leading-[60px]  self-start">
           Тренеры
         </div>
-        <div className="text-[30px] max-[700px]:text-[20px] text-[#EEF0F3] font-['Roboto'] font-normal leading-[36px]  self-start">
-          В нашей команде работают, только проверенные и опытные тренера со стажем работы более пяти
-          лет. Выбирать с кем заниматься только вам.
+        <div className="flex w-full flex-col gap-y-4">
+          <div className="text-[30px] max-[700px]:text-[20px] text-[#EEF0F3] font-['Roboto'] font-normal leading-[36px]  self-start">
+            В нашей команде работают, только проверенные и опытные тренера со стажем работы более
+            пяти лет. Выбирать с кем заниматься только вам.
+          </div>
+          <motion.div
+            className="self-start"
+            initial={{ x: 0 }}
+            animate={{ x: 30 }}
+            transition={{
+              duration: 1.2,
+              repeat: Infinity,
+              repeatType: "reverse"
+            }}>
+            <PiHandSwipeLeft className={`text-[50px] max-md:text-[40px]`} color="white" />
+          </motion.div>
         </div>
+
         <motion.div
           style={{
             mask: "linear-gradient(90deg, transparent, white 3%, white 97%, transparent)"
