@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Preview from "./components/Preview";
 import About from "./components/About";
@@ -28,6 +27,3 @@ export default function Home() {
     </div>
   );
 }
-
-// off top scroll
-// bunker main image text fix on iphone
