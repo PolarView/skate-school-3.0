@@ -22,7 +22,7 @@ const Faq = () => {
       id="faq"
       className="w-full flex flex-col items-center justify-center   max-md:min-h-[800px]   md:pt-[100px] pt-[30px] ">
       <div className=" h-full w-[100%] max-w-[1230px] flex flex-col px-5 items-center">
-        <div className="text-[50px] max-md:text-[40px] max-[500px]:text-[36px] font-['Unbounded'] font-bold  leading-[60px] max-md:leading-[44px] pb-[62px] s">
+        <div className="text-[50px] max-md:text-[40px] max-[500px]:text-[34px] font-['Unbounded'] self-start font-bold  leading-[60px] max-md:leading-[44px] md:pb-[62px] pb-5 ">
           Часто задаваемые вопросы
         </div>
         <div className="w-full flex-col items-center gap-y-5  pb-5">

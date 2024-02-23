@@ -9,6 +9,7 @@ import Coaches from "./components/Coaches";
 import Bunker from "./components/Bunker";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
+import Reviews from "./components/Reviews";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Pricing />
       <Coaches />
       <Bunker />
+      <Reviews />
       <Faq />
       <Footer />
     </div>
