@@ -57,9 +57,12 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="hidden items-center max-w-[35%]  justify-center gap-x-4  min-[1042px]:flex">
-          <button className="max-w-[200px] flex items-center h-[42px] border rounded-[40px] text-white text-center px-5 min-[1288px]:py-2 py-4 bg-[#546EFF]">
-            <span>Записаться онлайн</span>
-          </button>
+          <NextLink href="/enroll-ykl">
+            <button className="max-w-[200px] flex items-center h-[42px] border rounded-[40px] text-white text-center px-5 min-[1288px]:py-2 py-4 bg-[#546EFF]">
+              <span>Записаться онлайн</span>
+            </button>
+          </NextLink>
+
           <NextLink href="/translation">
             <button className="max-w-[240px] flex relative items-center h-[42px] border border-black rounded-[40px]  text-center px-5 min-[1288px]:py-2 py-4 ">
               <div className="absolute -top-1 -right-1">
@@ -76,9 +79,12 @@ const Navbar = () => {
           </NextLink>
         </div>
         <div className="w-full flex min-[1042px]:hidden items-center justify-between">
-          <button className="max-w-[200px]  flex items-center justify-start  h-[42px] max-[420px]:h-[32px] min-[1042px]:hidden  border rounded-[40px] text-white  px-5 min-[1288px]:py-2 py-4 bg-[#546EFF]">
-            <span>Записаться онлайн</span>
-          </button>
+          <NextLink href="/enroll-ykl">
+            <button className="max-w-[200px]  flex items-center justify-start  h-[42px] max-[420px]:h-[32px] min-[1042px]:hidden  border rounded-[40px] text-white  px-5 min-[1288px]:py-2 py-4 bg-[#546EFF]">
+              <span>Записаться онлайн</span>
+            </button>
+          </NextLink>
+
           <button onClick={() => setIsMenuOpen(true)}>
             <IoMdMenu className="block text-3xl min-[1042px]:hidden" />
           </button>
@@ -151,9 +157,12 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className="w-full flex flex-col items-start gap-[22px]">
-                <button className="max-w-[200px] flex items-center h-[42px] border rounded-[40px] text-white text-center px-5 min-[1288px]:py-2 py-4 bg-[#546EFF]">
-                  <span>Записаться онлайн</span>
-                </button>
+                <NextLink href="/enroll-ykl">
+                  <button className="max-w-[200px] flex items-center h-[42px] border rounded-[40px] text-white text-center px-5 min-[1288px]:py-2 py-4 bg-[#546EFF]">
+                    <span>Записаться онлайн</span>
+                  </button>
+                </NextLink>
+
                 <div className="w-full flex justify-start gap-x-3">
                   <div>
                     <svg
