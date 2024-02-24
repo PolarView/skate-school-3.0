@@ -6,7 +6,7 @@ export const pricingData = [
     trainingDescription: "один на один с тренером",
     duration: {
       hour: {
-        firstTrainPrice: 1000,
+        firstTrainPrice: 990,
         standardTrainPrice: 2000
       },
       halfAndHour: {
@@ -22,11 +22,11 @@ export const pricingData = [
     trainingDescription: "занятие в компании друга, ребенка или второй половинки",
     duration: {
       hour: {
-        firstTrainPrice: 1000,
+        firstTrainPrice: 1800,
         standardTrainPrice: 2800
       },
       halfAndHour: {
-        firstTrainPrice: 1500,
+        firstTrainPrice: 2500,
         standardTrainPrice: 4000
       }
     }
@@ -38,11 +38,11 @@ export const pricingData = [
     trainingDescription: "занятие в группе от 3 до 4 человек",
     duration: {
       hour: {
-        firstTrainPrice: 1000,
+        firstTrainPrice: 700,
         standardTrainPrice: 1100
       },
       halfAndHour: {
-        firstTrainPrice: 1500,
+        firstTrainPrice: 1000,
         standardTrainPrice: 1500
       }
     }
