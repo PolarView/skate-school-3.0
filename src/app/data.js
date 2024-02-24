@@ -58,7 +58,7 @@ export const mentorsData = [
     description:
       "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
     video: "/mentors/mentor1.mp4",
-    thumb: "mentors/mentor-thumb1.webp"
+    thumb: "mentors/mentor-thumb1.jpg"
   },
   {
     id: 1,
@@ -103,7 +103,7 @@ export const mentorsData = [
   },
   {
     id: 5,
-    name: "???",
+    name: "Лёша",
     age: "29 лет",
     experience: 5,
     description:
