@@ -3,35 +3,56 @@ import React, { useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { CgWebsite } from "react-icons/cg";
 import { motion } from "framer-motion";
+import useWindowDimentions from "@/app/hooks/useWindowDimentions";
 
 const EnrollPopup = ({ setIsEnrollPopupOpen }) => {
+  const { windowWidth, windowHeight, isMobile } = useWindowDimentions(700);
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 100 }}
-      transition={{ duration: 0.5 }}
-      className="w-screen h-screen top-0 left-0  bg-[#060a14b9]   fixed z-[9999]">
+    <>
       <motion.div
-        initial={{ translateY: "-100%" }}
-        animate={{ translateY: "-50%", translateX: "50%" }}
-        transition={{ duration: 0.5, translateX: { duration: 0 } }}
-        className="w-[80%] max-w-[1360px] px-[80px] pt-[80px] pb-[100px] bg-[#191E28] rounded-[30px]  z-[9999999999] fixed top-[50%] -translate-y-[50%]  right-[50%]  translate-x-[50%]   flex flex-col items-center gap-y-10">
-        <div className="w-full flex justify-end">
+        initial={isMobile ? { opacity: 0, display: "hidden" } : { opacity: 0 }}
+        animate={isMobile ? {} : { opacity: 100 }}
+        transition={isMobile ? {} : { duration: 0.5 }}
+        className={`${
+          isMobile ? "hidden" : "w-screen h-screen top-0 left-0  bg-[#060a14b9] fixed z-[9999]"
+        }`}></motion.div>
+
+      <motion.div
+        initial={isMobile ? { height: 0 } : { translateY: "-100%" }}
+        animate={
+          isMobile ? { height: windowHeight + 105 } : { translateY: "-50%", translateX: "50%" }
+        }
+        transition={isMobile ? { duration: 0.3 } : { duration: 0.5, translateX: { duration: 0 } }}
+        className={`${
+          isMobile
+            ? `w-full h-[${windowHeight}px]   top-0 left-0 justify-center px-[20px] py-[20px] max-[400px]:px-3 overflow-hidden`
+            : "w-[80%] top-[50%] -translate-y-[50%]  right-[50%]  translate-x-[50%] rounded-[30px] px-[80px] pt-[80px] pb-[100px]"
+        } max-w-[1360px]     bg-[#191E28]  z-[999999999999999] fixed flex flex-col items-center gap-y-10`}>
+        <div className={`w-full flex justify-end ${isMobile && "absolute top-3 right-3 "}`}>
           <div className="cursor-pointer" onClick={() => setIsEnrollPopupOpen(false)}>
             <IoCloseOutline color="white" fontSize={45} />
           </div>
         </div>
-        <div className="flex w-full flex-col items-center justify-center gap-y-8">
-          <div className="font-['Unbounded'] font-bold text-center text-[38px] text-white">
+        <motion.div
+          initial={isMobile ? { opacity: 0 } : {}}
+          animate={isMobile ? { opacity: 100 } : {}}
+          transition={isMobile ? { duration: 0.4, delay: 0.3 } : {}}
+          className="flex w-full flex-col items-center justify-center gap-y-8 max-md:gap-y-4   ">
+          <div className="font-['Unbounded'] font-bold text-center text-[38px] max-[560px]:text-[29px] max-[400px]:text-[25px] text-white leading-[41px] max-[560px]:leading-[33px]">
             Выберете удобный формат записи
           </div>
-          <div className="font-['Roboto'] text-center font-normal text-[30px] leading-9 text-[#A0AFC8]">
+          <div className="font-['Roboto']  text-center font-normal text-[30px] max-[560px]:text-[20px] max-[400px]:text-[16px] leading-9 max-[560px]:leading-[24px] text-[#A0AFC8]">
             Мы всегда на связи в мессержерах. Напишите для записи онлайн какой формат тренировки вас
             интересует и мы поможем подобрать тренера.
           </div>
-          <div className="w-full flex-col justify-center pt-5 space-y-7 items-center">
-            <div className="w-full flex  justify-between ">
-              <button className="flex items-center justify-center w-[47%] gap-x-2 max-w-[575px] h-[66px] bg-[#546EFF] px-5 py-[32px] rounded-[96px]">
+          <div className="w-full flex-col justify-center pt-[5%] max-[700px]:pt-[16%] space-y-7 max-md:space-y-3 items-center">
+            <div
+              className={`w-full flex  justify-between ${
+                isMobile
+                  ? "flex-col justify-between space-y-7 max-md:space-y-3 items-center"
+                  : "flex-row"
+              }`}>
+              <button className="flex items-center justify-center max-[700px]:w-[90%] w-[47%] gap-x-2 max-w-[575px] h-[66px] max-[500px]:h-[50px] bg-[#546EFF] px-[32px] py-4 rounded-[96px]">
                 <div>
                   <svg
                     width="17"
@@ -45,11 +66,11 @@ const EnrollPopup = ({ setIsEnrollPopupOpen }) => {
                     />
                   </svg>
                 </div>
-                <div className="font-['Unbounded'] font-normal text-[20px] text-white">
+                <div className="font-['Unbounded'] font-normal text-[20px] max-[500px]:text-[16px] text-white">
                   Telegram
                 </div>
               </button>
-              <button className="flex items-center justify-center gap-x-2 max-w-[575px] w-[47%] h-[66px] bg-[#546EFF] px-5 py-[32px] rounded-[96px]">
+              <button className="flex items-center justify-center gap-x-2 max-w-[575px] max-[700px]:w-[90%] w-[47%] h-[66px] max-[500px]:h-[50px] bg-[#546EFF] px-[32px] py-4 rounded-[96px]">
                 <div>
                   <svg
                     width="22"
@@ -65,25 +86,25 @@ const EnrollPopup = ({ setIsEnrollPopupOpen }) => {
                     />
                   </svg>
                 </div>
-                <div className="font-['Unbounded'] font-normal text-[20px] text-white">
+                <div className="font-['Unbounded'] font-normal text-[20px] max-[500px]:text-[16px] text-white">
                   WhatsApp
                 </div>
               </button>
             </div>
             <div className="w-full flex justify-center items-center">
-              <button className="flex items-center justify-center gap-x-2 max-w-[575px] w-[47%] h-[66px] bg-[#546EFF] px-5 py-[32px] rounded-[96px]">
+              <button className="flex items-center justify-center gap-x-2 max-w-[575px]  max-[700px]:w-[90%] w-[47%] h-[66px] max-[500px]:h-[50px] bg-[#546EFF] px-[32px] py-4 rounded-[96px]">
                 <div>
                   <CgWebsite color="white" fontSize={30} />
                 </div>
-                <div className="font-['Unbounded'] font-normal text-[20px] text-white">
+                <div className="font-['Unbounded'] font-normal text-[20px] max-[500px]:text-[16px] text-white">
                   Приложение
                 </div>
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
-    </motion.div>
+    </>
   );
 };
 
