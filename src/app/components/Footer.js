@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaTelegramPlane } from "react-icons/fa";
 
@@ -17,9 +18,11 @@ const Footer = () => {
             <div className=" h-full group-hover:translate-x-3 group-hover:-translate-y-3 transition-all duration-300">
               <FaTelegramPlane fontSize={80} color="white" />
             </div>
-            <button className="w-[267px] text-[21px] flex justify-center items-center -mt-[35px] rotate-[10deg] px-10 py-3 h-[70px] font-['Unbounded'] bg-[#191E28] rounded-[40px] font-semibold text-white ">
-              <span>Подписывайся</span>
-            </button>
+            <Link href="https://t.me/Schoolskate">
+              <button className="w-[267px] text-[21px] flex justify-center items-center -mt-[35px] rotate-[10deg] px-10 py-3 h-[70px] font-['Unbounded'] bg-[#191E28] rounded-[40px] font-semibold text-white ">
+                <span>Подписывайся</span>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="flex w-full justify-between max-md:flex-wrap max-h-[390px] max-md:max-h-[2000px] ">
@@ -52,10 +55,13 @@ const Footer = () => {
           <div className=" h-full w-ful group-hover:translate-x-3 group-hover:-translate-y-3 transition-all duration-300">
             <FaTelegramPlane fontSize={80} color="white" />
           </div>
-          <button className="w-[267px]  text-[21px] flex justify-center items-center -mt-[35px] rotate-[10deg] px-10 py-3 h-[70px] font-['Unbounded'] bg-[#191E28] rounded-[40px] font-semibold text-white ">
-            <span>Подписывайся</span>
-          </button>
+          <Link href="https://t.me/Schoolskate">
+            <button className="w-[267px]  text-[21px] flex justify-center items-center -mt-[35px] rotate-[10deg] px-10 py-3 h-[70px] font-['Unbounded'] bg-[#191E28] rounded-[40px] font-semibold text-white ">
+              <span>Подписывайся</span>
+            </button>
+          </Link>
         </div>
+
         <div className="w-full flex items-center justify-between ">
           <div className="">
             <svg
