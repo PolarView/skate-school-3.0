@@ -14,7 +14,7 @@ const page = () => {
       }}>
       <div className="w-full p-1 flex justify-start bg-gray-800">
         <Link href="/">
-          <button className="max-w-[320px] my-2 min-[550px]:max-w-[500px] min-[800px]:max-w-[320px] max-[450px]:max-w-[280px]   flex justify-center items-center bg-[#546EFF] text-[16px] text-white rounded-[40px]  px-[33px] py-2">
+          <button className="max-w-[320px] my-2 min-[550px]:max-w-[500px] min-[800px]:max-w-[320px] max-[450px]:max-w-[280px]   flex justify-center items-center bg-[#546EFF] hover:bg-primaryHovered text-[16px] text-white rounded-[40px]  px-[33px] py-2">
             <span>На главную</span>
           </button>
         </Link>
