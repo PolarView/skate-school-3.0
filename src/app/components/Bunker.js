@@ -92,16 +92,16 @@ const Bunker = () => {
             <div className="absolute w-full h-full top-3 right-3 rounded-[18px] bg-[#191E28] "></div>
           </div>
           <div className="flex w-[35%] max-[950px]:w-[100%] flex-col  items-end max-[950px]:items-start justify-start ">
-            <div className="flex  justify-start flex-col">
-              <div className="flex flex-col items-start gap-y-3 pb-10">
+            <div className="flex  justify-start gap-y-10 max-md:gap-y-4 flex-col">
+              <div className="flex flex-col items-start ">
                 <span className="text-[50px] font-['Unbounded'] font-semibold text-[#191E28]">
                   Bunker
                 </span>
-                <span className="text-[27px] font-['Roboto'] font-normal text-[#191E28]">
-                  Ленинградское шоссе 23
+                <span className="text-[27px] max-[450px]:text-[24px] font-['Roboto'] font-normal text-[#191E28]">
+                  Ленинградский просп. 37
                 </span>
               </div>
-              <div className="flex flex-col items-start gap-y-3">
+              <div className="flex flex-col items-start gap-y-3 max-[500px]:gap-y-2">
                 <div className="flex items-center justify-center gap-x-2">
                   <span className="text-[50px] font-['Unbounded'] font-semibold text-[#191E28]">
                     <svg
@@ -112,7 +112,7 @@ const Bunker = () => {
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M15.5757 12.0016L9.31858 0.477417L2.61127 18.1213H0.314453V21.9385H9.85272V18.1213H8.93514L10.6158 13.356L15.5757 21.9767L20.5356 13.356L22.2162 18.1213H21.2986V21.9385H30.8369V18.1213H28.5382L21.8309 0.477417L15.5757 12.0016Z"
-                        fill="#546EFF"
+                        fill="#00a300"
                       />
                     </svg>
                   </span>
@@ -130,7 +130,25 @@ const Bunker = () => {
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M15.5757 12.0016L9.31858 0.477417L2.61127 18.1213H0.314453V21.9385H9.85272V18.1213H8.93514L10.6158 13.356L15.5757 21.9767L20.5356 13.356L22.2162 18.1213H21.2986V21.9385H30.8369V18.1213H28.5382L21.8309 0.477417L15.5757 12.0016Z"
-                        fill="#546EFF"
+                        fill="#00aba9"
+                      />
+                    </svg>
+                  </span>
+                  <span className="text-[27px] font-['Roboto'] font-normal text-[#191E28]">
+                    Цска
+                  </span>
+                </div>
+                <div className="flex items-center justify-center gap-x-2">
+                  <span className="text-[50px] font-['Unbounded'] font-semibold text-[#191E28]">
+                    <svg
+                      width="31"
+                      height="22"
+                      viewBox="0 0 31 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15.5757 12.0016L9.31858 0.477417L2.61127 18.1213H0.314453V21.9385H9.85272V18.1213H8.93514L10.6158 13.356L15.5757 21.9767L20.5356 13.356L22.2162 18.1213H21.2986V21.9385H30.8369V18.1213H28.5382L21.8309 0.477417L15.5757 12.0016Z"
+                        fill="#00aba9"
                       />
                     </svg>
                   </span>
@@ -138,6 +156,11 @@ const Bunker = () => {
                     Петровский парк
                   </span>
                 </div>
+              </div>
+              <div className="text-[#324164] text-[20px] max-[375px]:text-[16px]  font-['Roboto'] font-normal">
+                Время работы в будние: 10:00-22:00
+                <br />
+                По выходным: 9:00-22:00
               </div>
             </div>
           </div>

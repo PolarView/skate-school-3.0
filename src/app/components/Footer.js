@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaTelegramPlane } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
+import { BiSolidPhone } from "react-icons/bi";
+import { CgMail } from "react-icons/cg";
 import footerImage1 from "/public/footer/footer1.webp";
 import footerImage2 from "/public/footer/footer2.webp";
 import footerImage3 from "/public/footer/footer3.webp";
@@ -12,22 +15,71 @@ const Footer = () => {
       id="footer"
       className="w-full flex flex-col items-center justify-center bg-[#546EFF]   pb-[30px] lg:pb-[100px] md:pt-[100px] pt-[30px] ">
       <div className=" h-full w-[100%] max-w-[1200px] px-3 flex gap-y-[75px] flex-col items-center">
-        <div className="w-full gap-y-[75px] flex justify-between items-start max-h-[130px]">
-          <div className="text-[50px] max-md:text-[35px] max-w-[900px]  font-['Unbounded'] text-white font-semibold leading-[60px] min-md:pb-[62px] self-start">
-            @schoolskate
-            <br /> в соцсетях
-          </div>
-          <div className=" h-full flex items-center max-md:hidden group flex-col justify-center ">
-            <div className=" h-full group-hover:translate-x-3 group-hover:-translate-y-3 transition-all duration-300">
-              <FaTelegramPlane fontSize={80} color="white" />
+        <div className="w-full  flex-col justify-between space-y-8 items-start ">
+          <div className="w-full  flex justify-between items-start max-h-[130px]">
+            <div className="text-[50px] max-md:text-[35px] max-w-[900px]  font-['Unbounded'] text-white font-semibold leading-[60px] min-md:pb-[62px] self-start">
+              @schoolskate
+              <br /> в соцсетях
             </div>
-            <Link href="https://t.me/Schoolskate">
-              <button className="w-[267px] text-[21px] flex justify-center items-center -mt-[35px] rotate-[10deg] px-10 py-3 h-[70px] font-['Unbounded'] bg-[#191E28] rounded-[40px] font-semibold text-white ">
-                <span>Подписывайся</span>
-              </button>
-            </Link>
+            <div className=" h-full flex items-center max-md:hidden group flex-col justify-center ">
+              <div className=" h-full group-hover:translate-x-3 group-hover:-translate-y-3 transition-all duration-300">
+                <FaTelegramPlane fontSize={80} color="white" />
+              </div>
+              <Link href="https://t.me/Schoolskate">
+                <button className="w-[267px] text-[21px] flex justify-center items-center -mt-[35px] rotate-[10deg] px-10 py-3 h-[70px] font-['Unbounded'] bg-[#191E28] rounded-[40px] font-semibold text-white ">
+                  <span>Подписывайся</span>
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div className="w-full flex-col items-center space-y-5 justify-start">
+            <div className="w-full flex justify-start items-center gap-x-4">
+              <div>
+                <svg
+                  width="46"
+                  height="46"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M39.0846 20.9993C39.0846 30.9865 30.9884 39.0827 21.0013 39.0827C16.9494 39.0827 13.2088 37.75 10.1938 35.4991L4.36184 37.0618L5.97079 31.0571C4.04267 28.1814 2.91797 24.7217 2.91797 20.9993C2.91797 11.0122 11.0142 2.91602 21.0013 2.91602C30.9884 2.91602 39.0846 11.0122 39.0846 20.9993ZM30.4718 25.1238C29.9548 24.8677 27.4134 23.6289 26.9394 23.4579C26.4656 23.2874 26.1208 23.2018 25.7763 23.7145C25.4317 24.2271 24.4407 25.3803 24.1392 25.7222C23.8376 26.0637 23.536 26.1067 23.0192 25.8502C22.9349 25.8084 22.8201 25.7591 22.6784 25.6983C21.9509 25.3858 20.5146 24.7689 18.8618 23.3087C17.325 21.951 16.2875 20.2743 15.9859 19.7614C15.6843 19.2488 15.9536 18.9718 16.2126 18.7164C16.3672 18.5639 16.5447 18.3498 16.7224 18.1355C16.8119 18.0275 16.9015 17.9195 16.9882 17.8193C17.2078 17.5654 17.3029 17.373 17.4322 17.1114C17.4552 17.065 17.4792 17.0165 17.5051 16.965C17.6775 16.6233 17.5913 16.3242 17.4619 16.0681C17.3755 15.8965 16.8842 14.7117 16.4394 13.6392C16.2193 13.1085 16.0106 12.6053 15.868 12.2659C15.4975 11.3845 15.1219 11.3866 14.8206 11.3883C14.7807 11.3885 14.742 11.3888 14.7049 11.3869C14.4037 11.3721 14.0587 11.3688 13.7139 11.3688C13.3694 11.3688 12.8094 11.4969 12.3354 12.0096C12.305 12.0425 12.2711 12.0784 12.2341 12.1174C11.6957 12.6865 10.5261 13.9228 10.5261 16.2814C10.5261 18.788 12.3582 21.2098 12.6326 21.5725L12.637 21.5783C12.6539 21.6007 12.6843 21.6439 12.7277 21.7055C13.347 22.5852 16.6223 27.2373 21.4683 29.3101C22.7015 29.8377 23.6646 30.1526 24.4155 30.3888C25.654 30.7786 26.781 30.7234 27.6716 30.5917C28.6649 30.4446 30.7302 29.3529 31.161 28.1569C31.5918 26.9606 31.5917 25.9354 31.4626 25.7218C31.3586 25.5502 31.1154 25.4337 30.7551 25.2612C30.6675 25.2193 30.573 25.174 30.4718 25.1238Z"
+                    fill="#25D366"
+                  />
+                </svg>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="45"
+                  height="45"
+                  fill="#0b1e8a"
+                  viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.25 16.996h-2.134c-1.205 0-1.409-.687-2.401-1.679-.897-.897-1.395-.209-1.374 1.068.006.339-.161.611-.566.611-1.264 0-3.08.178-4.918-1.806-1.883-2.033-3.857-6.111-3.857-6.513 0-.237.196-.344.524-.344h2.17c.574 0 .623.284.783.649.667 1.521 2.265 4.574 2.69 2.87.244-.978.344-3.245-.703-3.44-.594-.11.452-.746 1.968-.746.377 0 .786.041 1.205.137.769.179.771.523.761 1.026-.039 1.903-.269 3.184.233 3.507.479.31 1.739-1.717 2.403-3.281.183-.433.219-.722.734-.722h2.654c1.39 0-.182 1.997-1.383 3.557-.968 1.255-.916 1.28.209 2.324.803.744 1.75 1.76 1.75 2.336.002.272-.21.446-.748.446z" />
+                </svg>
+              </div>
+              <div>
+                <FaTelegram color="blue" fontSize={45} />
+              </div>
+            </div>
+            <div className="flex flex-col items-start gap-y-2">
+              <div className="flex items-center gap-x-2">
+                <div className="rounded-full size-10 bg-slate-400 flex items-center justify-center">
+                  <BiSolidPhone color="white" fontSize={30} />
+                </div>
+                <div className="text-[22px] font-['Roboto'] text-white">+ 7 909 914 84 69</div>
+              </div>
+              <div className="flex items-center gap-x-2">
+                <div className="rounded-full size-10 bg-slate-400 flex items-center justify-center">
+                  <CgMail color="white" fontSize={30} />
+                </div>
+                <div className="text-[22px] font-['Roboto'] text-white">schoolskate@yandex.ru</div>
+              </div>
+            </div>
           </div>
         </div>
+
         <div className="flex w-full justify-between max-md:flex-wrap max-h-[390px] max-md:max-h-[2000px] ">
           <div className="w-[33%] max-md:w-[49%] min:max-w-[390px] relative aspect-square">
             <Image
