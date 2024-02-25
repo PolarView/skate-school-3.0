@@ -22,18 +22,18 @@ body {
 
 @font-face {
   font-family: Roboto;
-  src: url(../static/typography/Roboto-Regular.ttf);
+  src: url(../static/typography/Roboto-Regular.woff2);
   font-weight: 400;
 }
 
 @font-face {
   font-family: Unbounded;
-  src: url(../static/typography/Unbounded-Bold.ttf);
+  src: url(../static/typography/Unbounded-Bold.woff2);
   font-weight: 700;
 }
 
 @font-face {
   font-family: Unbounded;
-  src: url(../static/typography/Unbounded-Regular.ttf);
+  src: url(../static/typography/Unbounded-Regular.woff2);
   font-weight: 400;
 }

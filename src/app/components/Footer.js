@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaTelegramPlane } from "react-icons/fa";
+import footerImage1 from "/public/footer/footer1.webp";
+import footerImage2 from "/public/footer/footer2.webp";
+import footerImage3 from "/public/footer/footer3.webp";
 
 const Footer = () => {
   return (
@@ -28,7 +31,8 @@ const Footer = () => {
         <div className="flex w-full justify-between max-md:flex-wrap max-h-[390px] max-md:max-h-[2000px] ">
           <div className="w-[33%] max-md:w-[49%] min:max-w-[390px] relative aspect-square">
             <Image
-              src="/footer/footer1.webp"
+              placeholder="blur"
+              src={footerImage1}
               alt="фото со скейт тренировки"
               fill
               className="object-cover rounded-[10px] aspect-square"
@@ -36,7 +40,8 @@ const Footer = () => {
           </div>
           <div className="w-[33%] max-md:w-[49%] max-w-[390px] aspect-square relative">
             <Image
-              src="/footer/footer2.webp"
+              placeholder="blur"
+              src={footerImage2}
               alt="фото со скейт тренировки"
               fill
               className="object-cover rounded-[10px] aspect-square"
@@ -44,7 +49,8 @@ const Footer = () => {
           </div>
           <div className="w-[33%] flex max-md:w-[100%]  max-md:mt-2 md:max-w-[390px] max-md:self-center  relative aspect-square ">
             <Image
-              src="/footer/footer3.webp"
+              placeholder="blur"
+              src={footerImage3}
               alt="фото со скейт тренировки"
               fill
               className="object-cover rounded-[10px] aspect-square"

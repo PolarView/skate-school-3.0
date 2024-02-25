@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import aboutImage from "/public/about/about.webp";
 const About = () => {
   return (
     <div
@@ -13,7 +13,8 @@ const About = () => {
         <div className="max-w-[1200px]   md:h-[580px]   max-[390px]:h-[720px] xl:gap-x-16 max-md:gap-y-7  flex md:flex-row flex-col justify-between items-center ">
           <div className="w-[50%] max-h-[571px] max-w-[571px] max-md:w-[90%]  max-[390px]:w-[90%]  relative aspect-square">
             <Image
-              src="/about/about.webp"
+              placeholder="blur"
+              src={aboutImage}
               alt="Фото тренировки на скейте в школе"
               fill
               className="rounded-[10px] w-full aspect-square "

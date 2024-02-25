@@ -1,6 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import NextLink from "next/link";
+import bunkerMainImage from "/public/bunker/bunker.webp";
+import view1 from "/public/bunker/view1.webp";
+import view2 from "/public/bunker/view2.webp";
 
 const Bunker = () => {
   return (
@@ -9,7 +12,8 @@ const Bunker = () => {
       className="w-full flex flex-col items-center justify-center gap-y-10 max-md:pb-[50px]">
       <div className="w-full min-[1728px]:min-h-[990px] min-lg:min-h-[700px] max-md:min-h-[640px] min-h-[790px] relative">
         <Image
-          src="/bunker/bunker.webp"
+          placeholder="blur"
+          src={bunkerMainImage}
           fill
           alt="фото скейт-парка Bunker"
           className="object-cover rounded-bl-[18px] rounded-br-[18px]"
@@ -38,7 +42,8 @@ const Bunker = () => {
         <div className="flex w-full gap-x-5 justify-between  max-[700px]:min-h-[700px] max-[450px]:min-h-[600px]  max-[450px]:gap-y-2  flex-row max-[700px]:flex-col  items-center">
           <div className="w-[49%] max-w-[590px] max-h-[590px]  max-[700px]:h-[345px] max-[450px]:h-[300px] max-[700px]:w-[345px] max-[450px]:w-[300px] aspect-square relative">
             <Image
-              src="/bunker/view1.webp"
+              placeholder="blur"
+              src={view1}
               alt="фото скейт парка Bunker"
               fill
               className="rounded-[10px] aspect-square h-full "
@@ -46,7 +51,8 @@ const Bunker = () => {
           </div>
           <div className="w-[49%] max-w-[590px] max-h-[590px]  max-[700px]:h-[345px] max-[450px]:h-[300px] max-[450px]:w-[300px] max-[700px]:w-[345px] aspect-square relative">
             <Image
-              src="/bunker/view2.webp"
+              placeholder="blur"
+              src={view2}
               alt="фото скейт парка Bunker"
               fill
               className="rounded-[10px] aspect-square h-full "

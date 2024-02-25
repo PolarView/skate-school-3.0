@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import EnrollPopup from "./popups/EnrollPopup";
 import { CgWebsite } from "react-icons/cg";
+import previewImage from "/public/preview/preview.webp";
 
 const Preview = () => {
   const [isEnrollPopupOpen, setIsEnrollPopupOpen] = useState(false);
@@ -16,9 +17,10 @@ const Preview = () => {
               <div className="relative min-[800px]:max-w-[600px] w-[100%] h-[100%] min-[800px]:max-h-[550px] max-[800px]:max-w-[500px] aspect-square">
                 <Image
                   priority
-                  src="/preview/preview.webp"
+                  src={previewImage}
                   alt="фото скейт школы"
                   fill
+                  placeholder="blur"
                   className="aspect-square object-cover rounded-[10px] "
                 />
               </div>
