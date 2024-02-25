@@ -35,7 +35,7 @@ const Preview = () => {
                 </div>
                 <button
                   onClick={() => setIsEnrollPopupOpen(true)}
-                  className="max-w-[320px] min-[550px]:max-w-[500px] min-[800px]:max-w-[320px] max-[450px]:max-w-[280px] h-[56px] min-w-[147px] flex justify-center items-center bg-[#546EFF] text-[21px] text-white rounded-[40px]  px-[83px] py-[17px]">
+                  className="max-w-[320px] min-[550px]:max-w-[500px] min-[800px]:max-w-[320px] max-[450px]:max-w-[280px] h-[56px] min-w-[147px] flex justify-center items-center bg-[#546EFF] hover:bg-primaryHovered text-[21px] text-white rounded-[40px]  px-[83px] py-[17px]  ">
                   <span>Записаться</span>
                 </button>
               </div>

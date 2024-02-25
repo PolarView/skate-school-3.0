@@ -58,13 +58,13 @@ const Navbar = () => {
         </div>
         <div className="hidden items-center max-w-[35%]  justify-center gap-x-4  min-[1042px]:flex">
           <NextLink href="/enroll-ykl">
-            <button className="max-w-[200px] flex items-center h-[42px] border rounded-[40px] text-white text-center px-5 min-[1288px]:py-2 py-4 bg-[#546EFF]">
+            <button className="max-w-[200px] flex items-center h-[42px] border rounded-[40px] text-white text-center px-5 min-[1288px]:py-2 py-4 bg-[#546EFF] hover:bg-primaryHovered">
               <span>Записаться онлайн</span>
             </button>
           </NextLink>
 
           <NextLink href="/translation">
-            <button className="max-w-[240px] flex relative items-center h-[42px] border border-black rounded-[40px]  text-center px-5 min-[1288px]:py-2 py-4 ">
+            <button className="max-w-[240px] flex relative items-center h-[42px] border border-black rounded-[40px]  text-center px-5 min-[1288px]:py-2 py-4 hover:bg-gray-200">
               <div className="absolute -top-1 -right-1">
                 <span class="relative flex items-center justify-center size-4">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
@@ -80,7 +80,7 @@ const Navbar = () => {
         </div>
         <div className="w-full flex min-[1042px]:hidden items-center justify-between">
           <NextLink href="/enroll-ykl">
-            <button className="max-w-[200px]  flex items-center justify-start  h-[42px] max-[420px]:h-[32px] min-[1042px]:hidden  border rounded-[40px] text-white  px-5 min-[1288px]:py-2 py-4 bg-[#546EFF]">
+            <button className="max-w-[200px]  flex items-center justify-start  h-[42px] max-[420px]:h-[32px] min-[1042px]:hidden  border rounded-[40px] text-white  px-5 min-[1288px]:py-2 py-4 bg-[#546EFF] hover:bg-primaryHovered">
               <span>Записаться онлайн</span>
             </button>
           </NextLink>
@@ -158,7 +158,7 @@ const Navbar = () => {
               </div>
               <div className="w-full flex flex-col items-start gap-[22px]">
                 <NextLink href="/enroll-ykl">
-                  <button className="max-w-[200px] flex items-center h-[42px] border rounded-[40px] text-white text-center px-5 min-[1288px]:py-2 py-4 bg-[#546EFF]">
+                  <button className="max-w-[200px] flex items-center h-[42px] border rounded-[40px] text-white text-center px-5 min-[1288px]:py-2 py-4 bg-[#546EFF] hover:bg-primaryHovered">
                     <span>Записаться онлайн</span>
                   </button>
                 </NextLink>

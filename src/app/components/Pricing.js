@@ -40,7 +40,7 @@ const Pricing = () => {
                 key={item.id}
                 className="flex p-10 max-[1260px]:p-3 gap-y-9 max-md:gap-y-4 items-center justify-between  max-w-[31%] max-lg:max-w-[100%]  h-full  flex-col">
                 <div className="flex w-full flex-col items-start justify-center  gap-3">
-                  <div className="font-['Unbounded'] font-bold text-[24px] text-[#191E28]">
+                  <div className="font-['Unbounded'] lg:min-h-[44px] font-bold text-[24px] text-[#191E28]">
                     {item.trainingType}
                   </div>
                   <div className="text-[18px] font-['Roboto'] text-[#191E28]">
@@ -94,7 +94,7 @@ const Pricing = () => {
                 </div>
                 <button
                   onClick={() => setIsEnrollPopupOpen(true)}
-                  className="max-w-[320px] max-[450px]:max-w-[280px] h-[56px] min-w-[140px] font-normal font-['Unbounded'] flex justify-center items-center bg-[#546EFF] text-[21px] text-white rounded-[40px] px-[83px]  py-[17px]">
+                  className="max-w-[320px] max-[450px]:max-w-[280px] h-[56px] min-w-[140px] font-normal font-['Unbounded'] flex justify-center items-center bg-[#546EFF] hover:bg-primaryHovered text-[21px] text-white rounded-[40px] px-[83px]  py-[17px]">
                   <span>Записаться</span>
                 </button>
               </div>

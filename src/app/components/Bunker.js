@@ -68,7 +68,7 @@ const Bunker = () => {
               Вы можете оценить загрузу в скейт-парке, посмотрев прямой эфир с камер
             </div>
             <NextLink href="translation">
-              <button className="max-w-[450px] relative max-[600px]:w-[345px] max-[500px]:w-[300px] h-[56px] min-w-[140px] font-normal font-['Unbounded'] flex justify-center items-center bg-[#546EFF] text-5 text-white rounded-[40px] px-[83px] max-[600px]:px-[30px]  py-[17px]">
+              <button className="max-w-[450px] relative max-[600px]:w-[345px] max-[500px]:w-[300px] h-[56px] min-w-[140px] font-normal font-['Unbounded'] flex justify-center items-center bg-[#546EFF] hover:bg-primaryHovered text-5 text-white rounded-[40px] px-[83px] max-[600px]:px-[30px]  py-[17px]">
                 <span>Смотреть трансляцию</span>
                 <div className="absolute top-0 right-0">
                   <span class="relative flex items-center justify-center size-6">
