@@ -78,7 +78,7 @@ const Faq = () => {
             );
           })}
           <div className="w-full flex max-[430px]:flex-col items-center md:absolute md:-bottom-[100px] md:-translate-x-[50%] md:left-[50%] pt-10 max-[430px]:gap-y-3 gap-x-3  justify-center">
-            <div className="text-[26px] max-[550px]:text-[22px] max-[480px]:text-[18px] max-[430px]:text-[23px] font-['Unbounded'] font-normal">
+            <div className="text-[26px] max-[550px]:text-[22px] max-[480px]:text-[18px] max-[430px]:text-[21px] font-['Unbounded'] font-normal">
               Остались вопросы?
             </div>
             <Link href="https://wa.me/79099148469?text=">
