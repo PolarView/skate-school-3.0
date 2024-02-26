@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { faqData } from "../data";
+import Link from "next/link";
 
 const Faq = () => {
   const [faq, setFaq] = useState(faqData);
@@ -25,7 +26,7 @@ const Faq = () => {
         <div className="text-[50px] max-md:text-[40px] max-[500px]:text-[34px] font-['Unbounded'] self-start font-bold  leading-[60px] max-md:leading-[44px] md:pb-[62px] pb-5 ">
           Часто задаваемые вопросы
         </div>
-        <div className="w-full flex-col items-center gap-y-5  pb-5">
+        <div className="w-full flex-col relative items-center gap-y-5  pb-5">
           {faq.map((item) => {
             return (
               <div
@@ -76,6 +77,16 @@ const Faq = () => {
               </div>
             );
           })}
+          <div className="w-full flex max-[430px]:flex-col items-center md:absolute md:-bottom-[100px] md:-translate-x-[50%] md:left-[50%] pt-10 max-[430px]:gap-y-3 gap-x-3  justify-center">
+            <div className="text-[26px] max-[550px]:text-[22px] max-[480px]:text-[18px] max-[430px]:text-[23px] font-['Unbounded'] font-normal">
+              Остались вопросы?
+            </div>
+            <Link href="https://wa.me/79099148469?text=">
+              <div className="bg-primary text-white text-center  px-6 py-4 max-[500px]:px-3  font-['Unbounded'] rounded-[5px]">
+                Напиши нам!
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="w-full hidden min-[540px]:block">
