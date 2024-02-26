@@ -4,6 +4,7 @@ import NextLink from "next/link";
 import bunkerMainImage from "/public/bunker/bunker.webp";
 import view1 from "/public/bunker/view1.webp";
 import view2 from "/public/bunker/view2.webp";
+import Link from "next/link";
 
 const Bunker = () => {
   return (
@@ -161,6 +162,10 @@ const Bunker = () => {
                 Время работы в будние: 10:00-22:00
                 <br />
                 По выходным: 9:00-22:00
+                <br />
+                <Link href="https://wa.me/79099148469?text=">
+                  Тел: <span className="underline">+ 7 909 914 84 69</span>
+                </Link>
               </div>
             </div>
           </div>
