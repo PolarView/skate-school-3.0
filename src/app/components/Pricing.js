@@ -1,12 +1,22 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { pricingData } from "../data";
 import EnrollPopup from "./popups/EnrollPopup";
+import useEnrollPopup from "../hooks/useEnrollPopup";
+import { useSearchParams } from "next/navigation";
 
 const Pricing = () => {
-  const [isEnrollPopupOpen, setIsEnrollPopupOpen] = useState(false);
+  const [isEnrollPopupOpen, setIsEnrollPopupOpen] = useEnrollPopup();
   const [pricesState, setPricesState] = useState(pricingData);
+
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    // checks if basic url contains enroll-popup query string
+    const isEnrollPopupInUrl = searchParams.get("enroll-popup");
+    if (isEnrollPopupInUrl === "true") setIsEnrollPopupOpen(true);
+  }, []);
 
   const changeTrainingDuration = (id) => {
     setPricesState((prevState) => {

@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import EnrollPopup from "./popups/EnrollPopup";
-import { CgWebsite } from "react-icons/cg";
 import previewImage from "/public/preview/preview.webp";
+import useEnrollPopup from "../hooks/useEnrollPopup";
 
 const Preview = () => {
-  const [isEnrollPopupOpen, setIsEnrollPopupOpen] = useState(false);
+  const [isEnrollPopupOpen, setIsEnrollPopupOpen] = useEnrollPopup();
 
   return (
     <>

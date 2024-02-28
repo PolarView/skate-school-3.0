@@ -1,14 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { Link } from "react-scroll";
 import NextLink from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import EnrollPopup from "./popups/EnrollPopup";
+import useEnrollPopup from "../hooks/useEnrollPopup";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isEnrollPopupOpen, setIsEnrollPopupOpen] = useState(false);
+  const [isEnrollPopupOpen, setIsEnrollPopupOpen] = useEnrollPopup();
+
   return (
     <>
       {isEnrollPopupOpen && <EnrollPopup setIsEnrollPopupOpen={setIsEnrollPopupOpen} />}
