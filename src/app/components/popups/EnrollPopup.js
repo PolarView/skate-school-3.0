@@ -56,7 +56,7 @@ const EnrollPopup = ({ setIsEnrollPopupOpen }) => {
               <button className="flex items-center justify-center max-[700px]:w-[90%] w-[47%] gap-x-2 max-w-[575px] h-[66px] max-[500px]:h-[50px] bg-[#546EFF] px-[32px] py-4 rounded-[96px]">
                 <Link
                   className="flex items-center justify-center max-[700px]:w-[90%] w-[47%] gap-x-2 max-w-[575px] h-[66px] max-[500px]:h-[50px] bg-[#546EFF] px-[32px] py-4 rounded-[96px]"
-                  href="https://t.me/Schoolskate">
+                  href="https://t.me/schoolskate_admin">
                   <div>
                     <svg
                       width="17"

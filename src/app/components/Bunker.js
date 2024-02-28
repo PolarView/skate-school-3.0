@@ -98,8 +98,8 @@ const Bunker = () => {
                 <span className="text-[50px] font-['Unbounded'] font-semibold text-[#191E28]">
                   Bunker
                 </span>
-                <span className="text-[27px] max-[450px]:text-[24px] font-['Roboto'] font-normal text-[#191E28]">
-                  Ленинградский просп. 37
+                <span className="text-[27px] max-[450px]:text-[24px] max-[380px]:text-[21px]  font-['Roboto'] font-normal text-[#191E28]">
+                  Ленинградский просп. 37, к3
                 </span>
               </div>
               <div className="flex flex-col items-start gap-y-3 max-[500px]:gap-y-2">

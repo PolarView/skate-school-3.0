@@ -64,7 +64,7 @@ const Footer = () => {
                 </div>
               </Link>
 
-              <Link href="https://t.me/Schoolskate">
+              <Link href="https://t.me/schoolskate_admin">
                 <div>
                   <FaTelegram color="blue" fontSize={45} />
                 </div>
