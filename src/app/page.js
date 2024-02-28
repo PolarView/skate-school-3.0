@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Navbar from "./components/Navbar";
 import Preview from "./components/Preview";
 import About from "./components/About";
@@ -18,7 +19,9 @@ export default function Home() {
       <About />
       <Values />
       <Banner />
-      <Pricing />
+      <Suspense>
+        <Pricing />
+      </Suspense>
       <Coaches />
       <Bunker />
       <Reviews />
