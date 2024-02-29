@@ -13,8 +13,12 @@ module.exports = {
       },
       colors: {
         primary: "#546EFF",
+        primaryHovered: "#5064d3",
         dark: "#191E28",
-        primaryHovered: "#5064d3"
+        whatsapp: "#18D878",
+        whatsappHovered: "#1fbf6f",
+        ykl: "#FFCB00",
+        yklHovered: "#e0b302"
       },
       fontFamily: {
         Roboto: ["Roboto"],

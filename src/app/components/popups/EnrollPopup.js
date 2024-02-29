@@ -53,9 +53,9 @@ const EnrollPopup = ({ setIsEnrollPopupOpen }) => {
                   ? "flex-col justify-between space-y-7 max-md:space-y-3 items-center"
                   : "flex-row"
               }`}>
-              <button className="flex items-center justify-center max-[700px]:w-[90%] w-[47%] gap-x-2 max-w-[575px] h-[66px] max-[500px]:h-[50px] bg-[#546EFF] px-[32px] py-4 rounded-[96px]">
+              <button className="flex items-center justify-center max-[700px]:w-[90%] w-[47%] gap-x-2 max-w-[575px] h-[66px] max-[500px]:h-[50px] bg-[#546EFF] hover:bg-primaryHovered px-[32px] py-4 rounded-[96px]">
                 <Link
-                  className="flex items-center justify-center max-[700px]:w-[90%] w-[47%] gap-x-2 max-w-[575px] h-[66px] max-[500px]:h-[50px] bg-[#546EFF] px-[32px] py-4 rounded-[96px]"
+                  className="flex items-center justify-center max-[700px]:w-[90%] w-[47%] gap-x-2 max-w-[575px] h-[66px] max-[500px]:h-[50px]  px-[32px] py-4 rounded-[96px]"
                   href="https://t.me/schoolskate_admin">
                   <div>
                     <svg
@@ -76,9 +76,9 @@ const EnrollPopup = ({ setIsEnrollPopupOpen }) => {
                 </Link>
               </button>
 
-              <button className="flex items-center justify-center gap-x-2 max-w-[575px] max-[700px]:w-[90%] w-[47%] h-[66px] max-[500px]:h-[50px] bg-[#546EFF] px-[32px] py-4 rounded-[96px]">
+              <button className="flex items-center justify-center gap-x-2 max-w-[575px] max-[700px]:w-[90%] w-[47%] h-[66px] max-[500px]:h-[50px] bg-whatsapp hover:bg-whatsappHovered px-[32px] py-4 rounded-[96px]">
                 <Link
-                  className="flex items-center justify-center gap-x-2 max-w-[575px] max-[700px]:w-[90%] w-[47%] h-[66px] max-[500px]:h-[50px] bg-[#546EFF] px-[32px] py-4 rounded-[96px]"
+                  className="flex items-center justify-center gap-x-2 max-w-[575px] max-[700px]:w-[90%] w-[47%] h-[66px] max-[500px]:h-[50px]  px-[32px] py-4 rounded-[96px]"
                   href="https://wa.me/79099148469?text=">
                   <div>
                     <svg
@@ -103,12 +103,12 @@ const EnrollPopup = ({ setIsEnrollPopupOpen }) => {
             </div>
             <div className="w-full flex justify-center items-center">
               <Link className="w-full flex justify-center items-center" href="/enroll-ykl">
-                <button className="flex items-center justify-center gap-x-2 max-w-[575px]  max-[700px]:w-[90%] w-[47%] h-[66px] max-[500px]:h-[50px] bg-[#546EFF] px-[32px] py-4 rounded-[96px]">
+                <button className="flex items-center justify-center gap-x-2 max-w-[575px]  max-[700px]:w-[90%] w-[47%] h-[66px] max-[500px]:h-[50px] bg-ykl hover:bg-yklHovered px-[32px] py-4 rounded-[96px]">
                   <div>
                     <CgWebsite color="white" fontSize={30} />
                   </div>
                   <div className="font-['Unbounded'] font-normal text-[20px] max-[500px]:text-[16px] text-white">
-                    Онлайн
+                    Онлайн запись
                   </div>
                 </button>
               </Link>
