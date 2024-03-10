@@ -82,7 +82,6 @@ const Coaches = () => {
                   <video
                     onEnded={() => {
                       videoRefs[index].current.load();
-                      console.log(videoRefs[index]);
                     }}
                     className="w-full min-w-[350px] object-cover max-[1200px]:min-w-[320px] max-[1040px]:min-w-[260px] max-[440px]:min-w-[240px] max-[420px]:min-w-[220px] h-full rounded-[10px]"
                     playsInline
