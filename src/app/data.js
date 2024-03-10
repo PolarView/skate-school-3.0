@@ -98,7 +98,7 @@ export const mentorsData = [
     experience: 5,
     description:
       "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
-    video: "/mentors/mentor3.mp4",
+    video: "/mentors/mentor5.mp4",
     thumb: "mentors/mentor-thumb5.webp"
   },
   {
@@ -108,7 +108,7 @@ export const mentorsData = [
     experience: 5,
     description:
       "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
-    video: "/mentors/mentor3.mp4",
+    video: "/mentors/mentor6.mp4",
     thumb: "mentors/mentor-thumb6.webp"
   }
 ];

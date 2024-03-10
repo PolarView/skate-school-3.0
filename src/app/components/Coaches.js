@@ -80,6 +80,10 @@ const Coaches = () => {
                 className="w-[33%] max-[830px]:w-[40%] max-[700px]:w-[48%] max-[600px]:w-[55%] max-[520px]:w-[65%] max-[440px]:w-[87%] p-5 max-[440px]:p-[10px] max-[420px]:p-0 h-full flex flex-col  items-center justify-center gap-y-5 max-md:gap-y-2 ">
                 <div className="w-full h-[580px] max-[1200px]:h-[560px] max-[1040px]:h-[440px] max-[450px]:h-[400px] max-[420px]:h-[380px] relative">
                   <video
+                    onEnded={() => {
+                      videoRefs[index].current.load();
+                      console.log(videoRefs[index]);
+                    }}
                     className="w-full min-w-[350px] object-cover max-[1200px]:min-w-[320px] max-[1040px]:min-w-[260px] max-[440px]:min-w-[240px] max-[420px]:min-w-[220px] h-full rounded-[10px]"
                     playsInline
                     poster={mentor.thumb}
