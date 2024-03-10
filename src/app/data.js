@@ -58,7 +58,7 @@ export const mentorsData = [
     description:
       "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
     video: "/mentors/mentor1.mp4",
-    thumb: "mentors/mentor-thumb1.jpg"
+    thumb: "/mentors/mentor-thumb1.jpg"
   },
   {
     id: 1,
@@ -68,7 +68,7 @@ export const mentorsData = [
     description:
       "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
     video: "/mentors/mentor2.mp4",
-    thumb: "mentors/mentor-thumb4.webp"
+    thumb: "/mentors/mentor-thumb4.webp"
   },
   {
     id: 2,
@@ -78,7 +78,7 @@ export const mentorsData = [
     description:
       "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
     video: "/mentors/mentor3.mp4",
-    thumb: "mentors/mentor-thumb2.webp"
+    thumb: "/mentors/mentor-thumb2.webp"
   },
   {
     id: 3,
@@ -88,7 +88,7 @@ export const mentorsData = [
     description:
       "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
     video: "/mentors/mentor4.mp4",
-    thumb: "mentors/mentor-thumb3.webp"
+    thumb: "/mentors/mentor-thumb3.webp"
   },
 
   {
@@ -99,7 +99,7 @@ export const mentorsData = [
     description:
       "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
     video: "/mentors/mentor5.mp4",
-    thumb: "mentors/mentor-thumb5.webp"
+    thumb: "/mentors/mentor-thumb5.webp"
   },
   {
     id: 5,
@@ -109,7 +109,7 @@ export const mentorsData = [
     description:
       "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
     video: "/mentors/mentor6.mp4",
-    thumb: "mentors/mentor-thumb6.webp"
+    thumb: "/mentors/mentor-thumb6.webp"
   }
 ];
 
