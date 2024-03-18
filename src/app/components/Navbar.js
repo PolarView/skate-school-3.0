@@ -108,27 +108,27 @@ const Navbar = () => {
           </NextLink>
 
           <div className="hidden min-w-[50%] items-center justify-between  font-semibold text-[16px] min-[1150px]:text-[18px] text-[#191E28]  min-[1042px]:flex">
-            <Link smooth offset={-108} to="about">
+            <Link href="#about" smooth offset={-108} to="about">
               {" "}
               <div className="cursor-pointer hover:text-black">О школе</div>
             </Link>
 
-            <Link smooth offset={-108} to="pricing">
+            <Link smooth href="#pricing" offset={-108} to="pricing">
               {" "}
               <div className="cursor-pointer hover:text-black">Цены</div>
             </Link>
-            <Link smooth offset={-108} to="coaches">
+            <Link smooth href="#coaches" offset={-108} to="coaches">
               {" "}
               <div className="cursor-pointer hover:text-black">Тренеры</div>
             </Link>
-            <Link to="bunker" offset={-108} smooth>
+            <Link to="bunker" offset={-108} smooth href="#bunker">
               <div className="cursor-pointer hover:text-black">Скейт-парк</div>
             </Link>
-            <Link smooth offset={-108} to="faq">
+            <Link smooth href="#faq" offset={-108} to="faq">
               {" "}
               <div className="cursor-pointer hover:text-black">Вопросы</div>
             </Link>
-            <Link smooth offset={-108} to="footer">
+            <Link smooth href="#footer" offset={-108} to="footer">
               {" "}
               <div className="cursor-pointer hover:text-black">Контакты</div>
             </Link>

@@ -83,7 +83,7 @@ const Coaches = () => {
                 <div className="w-full h-[580px] max-[1200px]:h-[560px] max-[1040px]:h-[440px] max-[450px]:h-[400px] max-[420px]:h-[380px] relative">
                   <div
                     ref={posterRefs[index]}
-                    className={`absolute left-0 bottom-0 w-full h-full  hidden `}>
+                    className={`absolute left-0 bottom-0 w-full h-full hidden `}>
                     <Image
                       src={mentor.thumb}
                       fill
