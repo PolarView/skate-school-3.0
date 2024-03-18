@@ -16,7 +16,7 @@ const Navbar = () => {
       {isEnrollPopupOpen && <EnrollPopup setIsEnrollPopupOpen={setIsEnrollPopupOpen} />}
       <nav className="flex w-full fixed top-0  left-0 z-[9999] bg-white 2xl:px-[20px] py-[15px] md:h-[108px] h-[63px] justify-center items-center">
         <div className="w-[90%] max-w-[1400px] h-[58px] flex items-center justify-between">
-          <NextLink href="/">
+          <NextLink aria-label="Ведёт на главную страницу сайта" href="/">
             <div className="hidden min-[1042px]:block">
               <svg
                 width="95"
@@ -163,7 +163,10 @@ const Navbar = () => {
             </button>
 
             <button onClick={() => setIsMenuOpen(true)}>
-              <IoMdMenu className="block text-3xl min-[1042px]:hidden" />
+              <IoMdMenu
+                aria-label="кнопка откртия бокового меню"
+                className="block text-3xl min-[1042px]:hidden"
+              />
             </button>
           </div>
           {isMenuOpen && (

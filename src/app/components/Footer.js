@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           <div className="w-full flex-col items-center space-y-5 justify-start">
             <div className="w-full flex justify-start items-center gap-x-4">
-              <Link href="https://wa.me/79099148469?text=">
+              <Link aria-label="Ссылка на запись по вотсапу" href="https://wa.me/79099148469?text=">
                 <div>
                   <svg
                     width="46"
@@ -51,7 +51,9 @@ const Footer = () => {
                   </svg>
                 </div>
               </Link>
-              <Link href="https://vk.com/schoolskatepark">
+              <Link
+                aria-label="Ссылка на запись по вконтакте"
+                href="https://vk.com/schoolskatepark">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +66,9 @@ const Footer = () => {
                 </div>
               </Link>
 
-              <Link href="https://t.me/schoolskate_admin">
+              <Link
+                aria-label="Ссылка на запись по телеграмму"
+                href="https://t.me/schoolskate_admin">
                 <div>
                   <FaTelegram color="blue" fontSize={45} />
                 </div>

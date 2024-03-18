@@ -84,6 +84,7 @@ const Bunker = () => {
         <div className="w-full flex justify-between max-[950px]:gap-y-[42px] items-center min-[950px]:flex-row flex-col px-2">
           <div className="w-[65%] max-[950px]:w-[98%] max-[440px]:w-[100%] max-[390px]:max-w-[345px] h-[538px] max-[560px]:h-[400px] max-[440px]:h-[240px] relative">
             <iframe
+              title="Местоположение скейтпарка на карте"
               style={{ borderRadius: "18px", position: "relative", zIndex: "999" }}
               src="https://yandex.ru/map-widget/v1/?um=constructor%3A0a6085ea7a16ff1b81096e196aadeddc744e92b3a886eb5cfb1285a009f0ac82&amp;source=constructor"
               width="100%"
