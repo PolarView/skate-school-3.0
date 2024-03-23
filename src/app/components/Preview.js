@@ -10,7 +10,7 @@ const Preview = () => {
 
   return (
     <>
-      <div className="w-full  pt-[210px] max-md:pt-[120px] pb-[50px] rounded-bl-[18px] rounded-br-[18px] bg-[#191E28]">
+      <section className="w-full  pt-[210px] max-md:pt-[120px] pb-[50px] rounded-bl-[18px] rounded-br-[18px] bg-[#191E28]">
         <div className=" flex w-full justify-center flex-col  items-center px-4">
           <div className="flex w-[100%] max-w-[1200px] justify-between items-center max-md:gap-y-10 gap-x-20 max-[1160px]:gap-x-4 min-[800px]:flex-row flex-col">
             <div className="min-[800px]:w-[50%] w-[100%] max-w-[720px] flex items-center justify-start max-md:justify-center max-[450px]:px-2">
@@ -28,11 +28,11 @@ const Preview = () => {
 
             <div className="flex   flex-col min-[1160px]:text-[50px]  max-[1160px]:text-[40px] max-[900px]:text-[30px] max-[800px]:text-[40px] max-[600px]:text-[35px] max-[450px]:text-[30px] min-[800px]:w-[50%] w-full max-w-[800px] gap-2 items-center font-['Unbounded'] justify-start ">
               <div className="min-[800px]:max-w-[509px] flex flex-col font-bold gap-y-[32px] max-md:gap-10 max-[900px]:gap-[16px] self-start  leading-[55px] max-[900px]:leading-[35px]">
-                <div className="text-white min-w-[320px] max-[450px]:min-w-[280px] w-full">
+                <h1 className="text-white min-w-[320px] max-[450px]:min-w-[280px] w-full">
                   Первая
                   <div className="text-[#546EFF] w-full">школа скейтбординга</div>
                   для детей и взрослых в Москве
-                </div>
+                </h1>
                 <button
                   onClick={() => setIsEnrollPopupOpen(true)}
                   className="max-w-[320px] min-[550px]:max-w-[500px] min-[800px]:max-w-[320px] max-[450px]:max-w-[280px] h-[56px] min-w-[147px] flex justify-center items-center bg-[#546EFF] hover:bg-primaryHovered text-[21px] text-white rounded-[40px]  px-[83px] py-[17px]  ">
@@ -487,7 +487,7 @@ const Preview = () => {
             </svg>
           </div>
         </div>
-      </div>
+      </section>
       {isEnrollPopupOpen && <EnrollPopup setIsEnrollPopupOpen={setIsEnrollPopupOpen} />}
     </>
   );

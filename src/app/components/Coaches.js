@@ -41,18 +41,18 @@ const Coaches = () => {
     setCarouselWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
   return (
-    <div
+    <section
       id="coaches"
       className="w-full flex flex-col bg-[#191E28] items-center justify-center px-1 max-[700px]:px-2  max-md:min-h-[800px]  md:pt-[100px] py-[120px] max-md:py-5 max-md:pt-14 rounded-tl-[18px] rounded-tr-[18px]">
       <div className="  h-full w-[100%] max-w-[1230px] gap-y-[42px] flex flex-col items-center">
-        <div className="text-[50px] max-[700px]:text-[40px] text-white font-['Unbounded'] font-bold leading-[60px]  self-start">
+        <h2 className="text-[50px] max-[700px]:text-[40px] text-white font-['Unbounded'] font-bold leading-[60px]  self-start">
           Тренеры
-        </div>
+        </h2>
         <div className="flex w-full flex-col gap-y-4">
-          <div className="text-[30px] max-[700px]:text-[20px] text-[#EEF0F3] font-['Roboto'] font-normal leading-[36px]  self-start">
-            В нашей команде работают, только проверенные и опытные тренера со стажем работы более
+          <p className="text-[30px] max-[700px]:text-[20px] text-[#EEF0F3] font-['Roboto'] font-normal leading-[36px]  self-start">
+            В нашей команде работают, только проверенные и опытные тренеры со стажем работы более
             пяти лет. Выбирать с кем заниматься только вам.
-          </div>
+          </p>
           <motion.div
             className="self-start"
             initial={{ x: 0 }}
@@ -77,7 +77,7 @@ const Coaches = () => {
             dragConstraints={{ right: 0, left: -carouselWidth }}
             className="w-full h-full max-[450px]:space-x-5 pb-8 flex">
             {mentorsData.map((mentor, index) => (
-              <div
+              <article
                 key={mentor.id}
                 className="w-[33%] max-[830px]:w-[40%] max-[700px]:w-[48%] max-[600px]:w-[55%] max-[520px]:w-[65%] max-[440px]:w-[87%] p-5 max-[440px]:p-[10px] max-[420px]:p-0 h-full flex flex-col  items-center justify-center gap-y-5 max-md:gap-y-2 ">
                 <div className="w-full h-[580px] max-[1200px]:h-[560px] max-[1040px]:h-[440px] max-[450px]:h-[400px] max-[420px]:h-[380px] relative">
@@ -134,19 +134,19 @@ const Coaches = () => {
                 </div>
 
                 <div className="w-full flex flex-col items-center justify-center gap-y-2 max-md:gap-y-1">
-                  <div className="text-[30px] text-white font-['Unbounded'] font-semibold">
+                  <p className="text-[30px] text-white font-['Unbounded'] font-semibold">
                     {mentor.name}
-                  </div>
-                  <div className="text-[22px] text-white font-['Unbounded'] font-normal">
+                  </p>
+                  <p className="text-[22px] text-white font-['Unbounded'] font-normal">
                     стаж {mentor.experience} лет
-                  </div>
+                  </p>
                 </div>
-              </div>
+              </article>
             ))}
           </motion.div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

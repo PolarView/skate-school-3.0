@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Bunker = () => {
   return (
-    <div
+    <section
       id="bunker"
       className="w-full flex flex-col items-center justify-center gap-y-10 max-md:pb-[50px]">
       <div className="w-full min-[1728px]:min-h-[990px] min-lg:min-h-[700px] max-md:min-h-[640px] min-h-[790px] relative">
@@ -21,24 +21,24 @@ const Bunker = () => {
         />
         <div className="flex absolute top-[50%] right-[50%] select-none translate-x-[50%] -translate-y-[50%] items-center justify-center w-[550px] max-xl:w-[400px] max-md:w-[300px] h-[220px] max-xl:h-[180px] max-md:h-[104px] bg-[#191E28] rounded-[18px] rotate-3">
           <div className="text-center -rotate-3 flex  flex-col justify-center items-center text-white ">
-            <div className="font-['Unbounded'] rotate-0 font-semibold text-center text-[93px] max-xl:text-[60px] max-md:text-[50px]">
+            <h2 className="font-['Unbounded'] rotate-0 font-semibold text-center text-[93px] max-xl:text-[60px] max-md:text-[50px]">
               Bunker
-            </div>
-            <div className="font-['Unbounded'] text-center font-normal text-[24px] max-md:text-[15px]">
+            </h2>
+            <p className="font-['Unbounded'] text-center font-normal text-[24px] max-md:text-[15px]">
               cкейт-парк
-            </div>
+            </p>
           </div>
         </div>
       </div>
       <div className="max-w-[1200px] flex flex-col items-center justify-center gap-y-12 px-2">
         <div className="w-full flex max-[700px]:flex-col max-[700px]:gap-y-6 items-center justify-between gap-x-5  min-[700px]:max-h-[220px]">
-          <div className="font-['Unbounded'] w-[50%] max-[700px]:w-[100%] font-normal text-[50px] max-[1120px]:text-[32px] max-w-[590px] leading-[55px] max-md:leading-[35px] text-[#191E28]">
+          <p className="font-['Unbounded'] w-[50%] max-[700px]:w-[100%] font-normal text-[50px] max-[1120px]:text-[32px] max-w-[590px] leading-[55px] max-md:leading-[35px] text-[#191E28]">
             Schoolskate — больше, чем школа скейтбординга
-          </div>
-          <div className="font-['Roboto']  w-[50%] max-[700px]:w-[100%]   font-normal text-[30px] max-[1120px]:text-[24px] max-md:text-[20px] leading-[36px] max-md:leading-6 max-w-[590px] text-[#324164]">
+          </p>
+          <p className="font-['Roboto']  w-[50%] max-[700px]:w-[100%]   font-normal text-[30px] max-[1120px]:text-[24px] max-md:text-[20px] leading-[36px] max-md:leading-6 max-w-[590px] text-[#324164]">
             Специально для наших учеников мы спроектировали и создали собственный скейт-парк, в
             котором их тренировки будут приностить максимум результата и удовольствия
-          </div>
+          </p>
         </div>
         <div className="flex w-full gap-x-5 justify-between  max-[700px]:min-h-[700px] max-[450px]:min-h-[600px]  max-[450px]:gap-y-2  flex-row max-[700px]:flex-col  items-center">
           <div className="w-[49%] max-w-[590px] max-h-[590px]  max-[700px]:h-[345px] max-[450px]:h-[300px] max-[700px]:w-[345px] max-[450px]:w-[300px] aspect-square relative">
@@ -65,9 +65,9 @@ const Bunker = () => {
             Трансляция из Бункера
           </div>
           <div className="w-[50%] max-[700px]:w-[100%] max-w-[590px] flex flex-col items-start justify-between gap-y-[30px]">
-            <div className="font-['Roboto'] font-normal text-[30px] max-[1120px]:text-[24px] text-[#324164] leading-[36px]">
+            <h3 className="font-['Roboto'] font-normal text-[30px] max-[1120px]:text-[24px] text-[#324164] leading-[36px]">
               Вы можете оценить загрузу в скейт-парке, посмотрев прямой эфир с камер
-            </div>
+            </h3>
             <NextLink href="translation">
               <button className="max-w-[450px] relative max-[600px]:w-[345px] max-[500px]:w-[300px] h-[56px] min-w-[140px] font-normal font-['Unbounded'] flex justify-center items-center bg-[#546EFF] hover:bg-primaryHovered text-5 text-white rounded-[40px] px-[83px] max-[600px]:px-[30px]  py-[17px]">
                 <span>Смотреть трансляцию</span>
@@ -172,7 +172,7 @@ const Bunker = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

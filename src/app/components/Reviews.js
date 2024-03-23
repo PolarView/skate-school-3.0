@@ -2,11 +2,11 @@ import React from "react";
 
 const Reviews = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center px-2  max-md:min-h-[800px]  md:pt-[100px]  py-[30px] ">
+    <section className="w-full flex flex-col items-center justify-center px-2  max-md:min-h-[800px]  md:pt-[100px]  py-[30px] ">
       <div className="min-[1380px]:w-[80%]  h-full w-[100%] max-w-[1200px] flex flex-col items-center">
-        <div className="text-[50px] max-md:text-[40px] font-['Unbounded'] font-bold leading-[60px] md:pb-[62px] pb-5 self-start">
+        <h2 className="text-[50px] max-md:text-[40px] font-['Unbounded'] font-bold leading-[60px] md:pb-[62px] pb-5 self-start">
           Отзывы
-        </div>
+        </h2>
         <div
           style={{
             width: "100%",
@@ -52,7 +52,7 @@ const Reviews = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

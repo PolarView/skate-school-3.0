@@ -3,11 +3,11 @@ import React from "react";
 const Values = () => {
   return (
     <>
-      <div className="w-full flex flex-col items-center justify-center px-2  max-md:min-h-[800px]  md:pt-[100px] pt-[30px] ">
+      <section className="w-full flex flex-col items-center justify-center px-2  max-md:min-h-[800px]  md:pt-[100px] pt-[30px] ">
         <div className="min-[1380px]:w-[80%]  h-full w-[100%] max-w-[1200px] flex flex-col items-center">
-          <div className="text-[50px] max-md:text-[40px] font-['Unbounded'] font-bold leading-[60px] pb-[62px] self-start">
+          <h2 className="text-[50px] max-md:text-[40px] font-['Unbounded'] font-bold leading-[60px] pb-[62px] self-start">
             Ценности
-          </div>
+          </h2>
           <div className="max-w-[1200px] flex md:flex-row gap-x-3 flex-col justify-between items-center max-[450px]:px-0 px-4 max-[1050px]:h-[450px] max-md:gap-6 max-md:min-h-[1100px]">
             <div className="flex gap-y-9 max-md:gap-y-4  max-w-[31%] max-md:max-w-[90%]  h-full max-[1080px]:max-w-[32%] flex-col">
               <div>
@@ -32,13 +32,13 @@ const Values = () => {
                   <path d="M67.2256 78.8574L72.7861 114.242" stroke="#EEF0F3" stroke-width="6" />
                 </svg>
               </div>
-              <div className="text-[30px] max-md:min-h-0 max-[1080px]:text-[25px] max-md:text-[26px]  font-['Unbounded'] min-h-[72px] font-normal leading-9 text-[#191E28]">
+              <h3 className="text-[30px] max-md:min-h-0 max-[1080px]:text-[25px] max-md:text-[26px]  font-['Unbounded'] min-h-[72px] font-normal leading-9 text-[#191E28]">
                 Безопасность
-              </div>
-              <div className="text-[#324164] max-[1080px]:text-[18px] min-h-[153px] max-md:min-h-0  text-[20px] font-['Roboto'] leading-6 font-normal">
+              </h3>
+              <article className="text-[#324164] max-[1080px]:text-[18px] min-h-[153px] max-md:min-h-0  text-[20px] font-['Roboto'] leading-6 font-normal">
                 Мы обеспечиваем правильное использование защиты и соблюдение всех мер безопасности,
-                чтобы каждый момент на доске был лишен рисков.
-              </div>
+                чтобы все моменты на доске были лишены рисков.
+              </article>
             </div>
 
             <div className="flex gap-y-8 max-md:gap-y-4 max-w-[31%] max-md:max-w-[90%] max-[1080px]:max-w-[32%] h-full flex-col">
@@ -77,13 +77,13 @@ const Values = () => {
                   />
                 </svg>
               </div>
-              <div className="text-[30px] max-md:min-h-0 max-md:text-[26px] max-[1080px]:text-[25px] min-h-[72px] font-['Unbounded'] font-normal leading-9 text-[#191E28]">
+              <h3 className="text-[30px] max-md:min-h-0 max-md:text-[26px] max-[1080px]:text-[25px] min-h-[72px] font-['Unbounded'] font-normal leading-9 text-[#191E28]">
                 Эмоции
-              </div>
-              <div className="text-[#324164] max-[1080px]:text-[18px] max-md:text-[17px] min-h-[153px] max-md:min-h-0 text-[20px] font-['Roboto'] leading-6 font-normal">
-                Наши ученики испытывают море эмоций на каждом занятии: радость от успешного трюка и
-                волнение перед новыми вызовами. Эмоции — это то, что делает скейтбординг особенным.
-              </div>
+              </h3>
+              <article className="text-[#324164] max-[1080px]:text-[18px] max-md:text-[17px] min-h-[153px] max-md:min-h-0 text-[20px] font-['Roboto'] leading-6 font-normal">
+                Наши ученики испытывают море эмоций на каждом занятии. Радость от успешного трюка
+                или волнение перед новыми вызовами. Именно эмоции делают скейтбординг особенным.
+              </article>
             </div>
 
             <div className="flex gap-y-8 max-md:gap-y-4 max-w-[31%] max-md:max-w-[90%] max-[1080px]:max-w-[34%] h-full flex-col">
@@ -116,13 +116,13 @@ const Values = () => {
                   />
                 </svg>
               </div>
-              <div className="text-[30px] max-md:min-h-0 max-md:text-[26px] max-[1080px]:text-[25px] min-h-[72px] font-['Unbounded'] font-normal leading-9 text-[#191E28]">
+              <h3 className="text-[30px] max-md:min-h-0 max-md:text-[26px] max-[1080px]:text-[25px] min-h-[72px] font-['Unbounded'] font-normal leading-9 text-[#191E28]">
                 Индивидуальный подход
-              </div>
-              <div className="text-[#324164] max-[1080px]:text-[18px] min-h-[153px] max-md:min-h-0 text-[20px] font-['Roboto'] leading-6 font-normal">
-                В нашей скейт-школе мы понимаем, что каждый ученик уникален. В обучении помогаем
-                каждому развиваться в собственном темпе и стиле.
-              </div>
+              </h3>
+              <article className="text-[#324164] max-[1080px]:text-[18px] min-h-[153px] max-md:min-h-0 text-[20px] font-['Roboto'] leading-6 font-normal">
+                В нашей скейт-школе — каждый ученик уникален. В процессе обучения мы помогаем
+                развиваться в комфортном темпе и собственном стиле.
+              </article>
             </div>
           </div>
         </div>
@@ -2082,7 +2082,7 @@ const Values = () => {
             />
           </svg>
         </div>
-      </div>
+      </section>
     </>
   );
 };

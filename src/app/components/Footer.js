@@ -11,16 +11,16 @@ import footerImage3 from "/public/footer/footer3.webp";
 
 const Footer = () => {
   return (
-    <div
+    <footer
       id="footer"
       className="w-full flex flex-col items-center justify-center bg-[#546EFF]   pb-[30px] lg:pb-[100px] md:pt-[100px] pt-[30px] ">
       <div className=" h-full w-[100%] max-w-[1200px] px-3 flex gap-y-[75px] flex-col items-center">
         <div className="w-full  flex-col justify-between space-y-8 items-start ">
           <div className="w-full  flex justify-between items-start max-h-[130px]">
-            <div className="text-[50px] max-md:text-[35px] max-w-[900px]  font-['Unbounded'] text-white font-semibold leading-[60px] min-md:pb-[62px] self-start">
+            <h3 className="text-[50px] max-md:text-[35px] max-w-[900px]  font-['Unbounded'] text-white font-semibold leading-[60px] min-md:pb-[62px] self-start">
               @schoolskate
               <br /> в соцсетях
-            </div>
+            </h3>
             <div className=" h-full flex items-center max-md:hidden group flex-col justify-center ">
               <div className=" h-full group-hover:translate-x-3 group-hover:-translate-y-3 transition-all duration-300">
                 <FaTelegramPlane fontSize={80} color="white" />
@@ -221,14 +221,14 @@ const Footer = () => {
             </svg>
           </div>
           <div className="flex flex-col gap-x-10 items-start max-[500px]:items-end ">
-            <div className="text-[26px] font-['Unbounded'] font-bold text-white">schoolskate</div>
-            <div className="text-[14px] self-end font-['Roboto'] font-normal opacity-40 text-white">
+            <span className="text-[26px] font-['Unbounded'] font-bold text-white">schoolskate</span>
+            <span className="text-[14px] self-end font-['Roboto'] font-normal opacity-40 text-white">
               ИП Чаплеевский Роман Павлович, ИНН 771875998609
-            </div>
+            </span>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
