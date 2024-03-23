@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "Skateschool - скейт школа в москве",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="ru">
       <body>{children}</body>
       <Analytics />
+      <SpeedInsights />
     </html>
   );
 }
