@@ -1,5 +1,4 @@
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Skateschool - скейт школа в москве",
@@ -17,7 +16,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <body>{children}</body>
-      <Analytics />
     </html>
   );
 }
