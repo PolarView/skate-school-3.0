@@ -1,14 +1,14 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
-import { pricingData } from "../data";
+// import { pricingData } from "../data";
 import EnrollPopup from "./popups/EnrollPopup";
 import useEnrollPopup from "../hooks/useEnrollPopup";
 import { useSearchParams } from "next/navigation";
 
-const Pricing = () => {
+const Pricing = ({ pricing }) => {
   const [isEnrollPopupOpen, setIsEnrollPopupOpen] = useEnrollPopup();
-  const [pricesState, setPricesState] = useState(pricingData);
+  const [pricesState, setPricesState] = useState(pricing);
 
   const searchParams = useSearchParams();
 

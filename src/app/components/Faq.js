@@ -1,18 +1,14 @@
 "use client";
-import React, { useState } from "react";
-import { faqData } from "../data";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
-const Faq = () => {
-  const [faq, setFaq] = useState(faqData);
+const Faq = ({ faq }) => {
+  let [faqs, setFaqs] = useState(faq);
+  console.log(faqs);
 
   const toggleFaq = (id) => {
-    console.log("here");
-    console.log(faq);
-
-    setFaq((prevState) => {
+    setFaqs((prevState) => {
       return prevState.map((item) => {
-        console.log(item.id, id);
         if (item.id === id) return { ...item, isOpen: !item.isOpen };
         else return item;
       });
@@ -27,7 +23,7 @@ const Faq = () => {
           Часто задаваемые вопросы
         </h2>
         <div className="w-full flex-col relative items-center gap-y-5  pb-5">
-          {faq.map((item) => {
+          {faqs.map((item) => {
             return (
               <div
                 className="w-full py-[32px] cursor-pointer border-b  border-[#3241644D]"
@@ -35,7 +31,8 @@ const Faq = () => {
                 onClick={() => toggleFaq(item.id)}>
                 <div className="flex w-full justify-between gap-x-5 items-center">
                   <p className="text-[26px] font-['Roboto'] font-normal">{item.question}</p>
-                  <div className={`${faq[item.id].isOpen && "rotate-45"} ease-in-out duration-300`}>
+                  <div
+                    className={`${faqs[item.id].isOpen && "rotate-45"} ease-in-out duration-300`}>
                     <svg
                       width="35"
                       height="34"

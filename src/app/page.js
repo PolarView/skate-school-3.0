@@ -11,7 +11,49 @@ import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import Reviews from "./components/Reviews";
 
-export default function Home() {
+import { client } from "../sanity/client.js";
+
+const SANITY_QUERY = `{
+ 
+  "faqs": *[_type == "faq"] | order(id asc) {
+    id,
+    question,
+    answer,
+    isOpen
+  },
+  "coaches": *[_type == "coach"] | order(id asc) {
+    id,
+    name,
+    experience,
+    thumb,
+    "video": video{'videoUrl':asset->url}
+  },
+  "pricing": *[_type == "pricing"] | order(id asc) {
+    id,
+    currentDuration,
+    trainingType,
+    trainingDescription,
+    duration
+  }
+}`;
+
+async function getSanityData() {
+  const data = await client.fetch(
+    SANITY_QUERY,
+    {}
+    // {
+    //   next: {
+    //     revalidate: 3600 // look for updates to revalidate cache every hour
+    //   }
+    // }
+  );
+  console.log(data);
+  return data;
+}
+
+export default async function Home() {
+  const { faqs: faq, coaches, pricing } = await getSanityData();
+
   return (
     <div className=" min-h-screen flex max-w-screen overflow-x-hidden flex-col w-screen">
       <Navbar />
@@ -20,12 +62,14 @@ export default function Home() {
       <Values />
       <Banner />
       <Suspense>
-        <Pricing />
+        <Pricing pricing={pricing} />
       </Suspense>
-      <Coaches />
+      <Coaches coaches={coaches} />
       <Bunker />
       <Reviews />
-      <Faq />
+      <Suspense>
+        <Faq faq={faq} />
+      </Suspense>
       <Footer />
     </div>
   );

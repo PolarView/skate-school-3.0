@@ -6,8 +6,10 @@ import { BsPauseFill, BsFillPlayFill } from "react-icons/bs";
 import { GoMute, GoUnmute } from "react-icons/go";
 import { PiHandSwipeLeft } from "react-icons/pi";
 import Image from "next/image";
+import { urlFor } from "@/sanity/client";
 
-const Coaches = () => {
+const Coaches = ({ coaches }) => {
+  console.log(coaches);
   const [carouselWidth, setCarouselWidth] = useState(null);
   const carousel = useRef(null);
   const videoRefs = mentorsData.map(() => useRef(null));
@@ -76,7 +78,7 @@ const Coaches = () => {
             drag="x"
             dragConstraints={{ right: 0, left: -carouselWidth }}
             className="w-full h-full max-[450px]:space-x-5 pb-8 flex">
-            {mentorsData.map((mentor, index) => (
+            {coaches.map((mentor, index) => (
               <article
                 key={mentor.id}
                 className="w-[33%] max-[830px]:w-[40%] max-[700px]:w-[48%] max-[600px]:w-[55%] max-[520px]:w-[65%] max-[440px]:w-[87%] p-5 max-[440px]:p-[10px] max-[420px]:p-0 h-full flex flex-col  items-center justify-center gap-y-5 max-md:gap-y-2 ">
@@ -85,7 +87,7 @@ const Coaches = () => {
                     ref={posterRefs[index]}
                     className={`absolute left-0 bottom-0 w-full h-full hidden `}>
                     <Image
-                      src={mentor.thumb}
+                      src={urlFor(mentor.thumb).url()}
                       fill
                       className="w-full h-full object-cover rounded-[10px]"
                     />
@@ -99,10 +101,10 @@ const Coaches = () => {
                       posterRefs[index].current.style.display = "none";
                     }}
                     playsInline
-                    poster={mentor.thumb}
+                    poster={urlFor(mentor.thumb).url()}
                     ref={videoRefs[index]}
                     // ref={(el) => (videoRefsArray.current[index] = el)}
-                    src={mentor.video}></video>
+                    src={mentor.video.videoUrl}></video>
                   <div className="absolute left-0 bottom-0 w-full h-full text-white cursor-pointer">
                     {playing[index] ? (
                       <div
